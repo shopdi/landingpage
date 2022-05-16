@@ -1,3 +1,99 @@
+
 .main-section {
-  min-height: 100vh;
+  min-height: calc(100vh - 65px);
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+nav{
+  margin-top: 24px;
+}
+.wrapper-view{
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 30vh;
+  width: 50%;
+  
+}
+.title-text{
+  white-space: nowrap;
+}
+.first-view  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+backdrop-filter: blur(40px);
+/* Note: backdrop-filter has minimal browser support */
+  z-index: -2;
+}
+.bg-blur{
+  background-image: url('../images/bgblur.png');
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(179.54deg, rgba(48, 61, 74, 0.3) -110.88%, rgba(48, 61, 74, 0) 110.14%);
+backdrop-filter: blur(40px);
+
+}
+canvas {
+  width: 100%;
+  opacity: 0.7;
+}
+@-moz-document url-prefix() {
+  canvas {
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .wrapper-view{
+    width: 100%;
+    padding-bottom: 10vh;
+  }
+  nav{
+    margin: 0 16px 0 16px;
+  }
+  .image-view{
+    margin-top: 10vh;
+    bottom: 0;
+    transform: none;
+    width: 100%;
+    position: relative;
+    img{
+    width: 90%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .title-text{
+    font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 130%;
+letter-spacing: -1px;
+margin-bottom: 32px;
+    white-space: normal;
+  }
+  .advers-text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+  .advers-countdown-item{
+    flex-direction: column;
+  }
 }

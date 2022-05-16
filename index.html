@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +13,7 @@
 
 <body>
   <div class="wrapper">
+    <nav class="container">
     <div class="mb-navigation">
       <div id="btn_menu_close" class="mb-navigation-close"><img src="./images/close.svg" /></div>
       <div class="mb-navigation-list-menu">
@@ -34,86 +34,92 @@
         </div>
       </div>
     </div>
+    <div class="header_mobile">
+      <div class="header_mobile-language">
+        <img srcset="./images/vietnam.png 2x" />
+        <span class="header_mobile-language-text">VI</span>
+        <img srcset="./images/arrow-down.png 2x" />
+      </div>
+      <img class="header_mobile-logo" srcset="./images/logo_mobile.png 2x" />
+      <div class="header_mobile-menu-btn">
+        <img id="btn_menu_open" srcset="./images/menu_icon.svg" />
+      </div>
+    </div>
+    <div class="header">
+      <div class="header-image-logo">
+        <img class="header-logo" srcset="./images/logo.png 2x" />
+      </div>
+      <ul class="header-menu">
+        <li class="header-menu-item">
+          <a href="#home" class="header-menu-text">Home</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#aboutus" class="header-menu-text">About us</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#partners" class="header-menu-text">Partners</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#contact" class="header-menu-text">Contact</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#white" class="header-menu-text">Whitepaper</a>
+        </li>
+      </ul>
+      <div class="header-language">
+        <img srcset="./images/vietnam.png 2x" />
+        <span class="header-language-text">VI</span>
+        <img srcset="./images/arrow-down.png 2x" />
+      </div>
+    </div>
+
+  </nav>
+  <div class="bg-blur"></div>
+  <div class="first-view"></div>
     <section id="home" class="container main-section">
-      <div class="header_mobile">
-        <div class="header_mobile-language">
-          <img srcset="./images/vietnam.png 2x" />
-          <span class="header_mobile-language-text">VI</span>
-          <img srcset="./images/arrow-down.png 2x" />
+
+      <div class="wrapper-view">
+        <div class="title">
+          <h1 class="title-text">SHOPDI - SĂN CỰC PHẨM, GIÁ CỰC SỐC</h1>
         </div>
-        <img class="header_mobile-logo" srcset="./images/logo_mobile.png 2x" />
-        <div class="header_mobile-menu-btn">
-          <img id="btn_menu_open" srcset="./images/menu_icon.svg" />
-        </div>
-      </div>
-      <div class="header">
-        <div class="header-image-logo">
-          <img class="header-logo" srcset="./images/logo.png 2x" />
-        </div>
-        <ul class="header-menu">
-          <li class="header-menu-item">
-            <a href="#home" class="header-menu-text">Home</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#aboutus" class="header-menu-text">About us</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#partners" class="header-menu-text">Partners</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#contact" class="header-menu-text">Contact</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#white" class="header-menu-text">Whitepaper</a>
-          </li>
-        </ul>
-        <div class="header-language">
-          <img srcset="./images/vietnam.png 2x" />
-          <span class="header-language-text">VI</span>
-          <img srcset="./images/arrow-down.png 2x" />
-        </div>
-      </div>
-      <div class="title">
-        <h1 class="title-text">SHOPDI - SĂN CỰC PHẨM, GIÁ CỰC SỐC</h1>
-      </div>
-      <div class="advertisement">
-        <div class="advertisement-info">
-          <h2 class="advertisement-text">
-            Shopdi là sàn Thương mại điện tử đầu tiên tham gia vào các hoạt động
-            ứng dụng trò chơi sẽ được quyền quyết định mua sản phẩm với mức giá
-            mong muốn mà không ảnh hưởng đến lợi nhuận của người bán.
-          </h2>
-          <div class="advertisement-countdown">
-            <div class="advertisement-countdown-item">
-              <h3 id="advertisement-days" class="advertisement-countdown-item-time">81</h3>
-              <h4 class="advertisement-countdown-item-type">days</h4>
+          <div class="advers-info">
+            <h2 class="advers-text">
+              Shopdi là sàn Thương mại điện tử đầu tiên tham gia vào các hoạt động
+              ứng dụng trò chơi sẽ được quyền quyết định mua sản phẩm với mức giá
+              mong muốn mà không ảnh hưởng đến lợi nhuận của người bán.
+            </h2>
+            <div class="advers-countdown">
+              <div class="advers-countdown-item">
+                <h3 id="advers-days" class="advers-countdown-item-time">81</h3>
+                <h4 class="advers-countdown-item-type">days</h4>
+              </div>
+              <div class="advers-countdown-item">
+                <h3 id="advers-hours" class="advers-countdown-item-time">15</h3>
+                <h4 class="advers-countdown-item-type">hours</h4>
+              </div>
+              <div class="advers-countdown-item">
+                <h3 id="advers-minutes" class="advers-countdown-item-time">30</h3>
+                <h4 class="advers-countdown-item-type">minutes</h4>
+              </div>
+              <div class="advers-countdown-item">
+                <h3 id="advers-seconds" class="advers-countdown-item-time">15</h3>
+                <h4 class="advers-countdown-item-type">seconds</h4>
+              </div>
             </div>
-            <div class="advertisement-countdown-item">
-              <h3 id="advertisement-hours" class="advertisement-countdown-item-time">15</h3>
-              <h4 class="advertisement-countdown-item-type">hours</h4>
-            </div>
-            <div class="advertisement-countdown-item">
-              <h3 id="advertisement-minutes" class="advertisement-countdown-item-time">30</h3>
-              <h4 class="advertisement-countdown-item-type">minutes</h4>
-            </div>
-            <div class="advertisement-countdown-item">
-              <h3 id="advertisement-seconds" class="advertisement-countdown-item-time">15</h3>
-              <h4 class="advertisement-countdown-item-type">seconds</h4>
+            <div class="advers-button">
+              <button class="advers-button-wishlist">
+                <span class="advers-button-wishlist-text">Join Wishlist</span>
+              </button>
+              <button class="advers-button-readmore">
+                <span class="advers-button-readmore-text">Read More</span>
+              </button>
             </div>
           </div>
-          <div class="advertisement-button">
-            <button class="advertisement-button-wishlist">
-              <span class="advertisement-button-wishlist-text">Join Wishlist</span>
-            </button>
-            <button class="advertisement-button-readmore">
-              <span class="advertisement-button-readmore-text">Read More</span>
-            </button>
+          <div class="image-view">
+            <img src="./images/screen-view.png" />
           </div>
-        </div>
-        <div class="advertisement-image">
-          <img src="./images/screen.svg" />
-        </div>
       </div>
+
     </section>
     <section id="aboutus" class="container aboutus">
       <h1 class="aboutus-name">ABOUT US</h1>
@@ -757,8 +763,8 @@
         <div class="footer-grid-column">
           <div class="footer-grid-column-texttitle">Hợp tác liên kết</div>
           <div class="footer-grid-column-policys">
-            <div class="footer-grid-column-policys-text">Quy chế hoạt động Sàn TMĐT</div>
-            <div class="footer-grid-column-policys-text">Bán hàng cùng Shopdi</div>
+            <a class="footer-grid-column-policys-text">Quy chế hoạt động Sàn TMĐT</a>
+            <a class="footer-grid-column-policys-text">Bán hàng cùng Shopdi</a>
           </div>
         </div>
         <div class="footer-grid-column">

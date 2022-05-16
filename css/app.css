@@ -31,6 +31,10 @@ button {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #FDD116;
 }
 
 img {
@@ -176,17 +180,6 @@ button {
   line-height: 140%;
 }
 
-@media only screen and (max-width: 992px) {
-  .title {
-    margin-top: 63px !important;
-  }
-  .title-text {
-    font-size: 32px !important;
-  }
-}
-.title {
-  margin-top: 107px;
-}
 .title-text {
   font-style: normal;
   font-weight: 600;
@@ -196,49 +189,68 @@ button {
   color: #f4f6f8;
 }
 
+.image-view {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.image-view img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 992px) {
-  .advertisement {
+  .title {
+    margin-top: 63px;
+  }
+  .title-text {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .wrapper-view {
     grid-template-columns: none !important;
   }
-  .advertisement-text {
+  .wrapper-view-text {
     font-size: 16px !important;
     text-align: center !important;
   }
-  .advertisement-image img {
+  .wrapper-view-image img {
     width: 100% !important;
     height: 100% !important;
   }
-  .advertisement-countdown {
+  .wrapper-view-countdown {
     gap: 4px 0px;
     justify-content: space-around;
   }
-  .advertisement-countdown-item {
+  .wrapper-view-countdown-item {
     flex-direction: column;
   }
-  .advertisement-countdown-item-time {
+  .wrapper-view-countdown-item-time {
     font-size: 32px !important;
   }
-  .advertisement-button {
+  .wrapper-view-button {
     justify-content: space-evenly;
   }
-  .advertisement-button-wishlist {
+  .wrapper-view-button-wishlist {
     width: 155px !important;
   }
-  .advertisement-button-readmore {
+  .wrapper-view-button-readmore {
     width: 155px !important;
   }
 }
-.advertisement {
+.advers {
   position: relative;
   display: grid;
   margin-top: 32px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0 54px;
 }
-.advertisement-image {
+.advers-image {
   margin-top: 10px;
 }
-.advertisement-text {
+.advers-text {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -246,18 +258,18 @@ button {
   letter-spacing: -1px;
   color: #f4f6f8;
 }
-.advertisement-countdown {
+.advers-countdown {
   margin-top: 32px;
   display: flex;
   gap: 0 16px;
 }
-.advertisement-countdown-item {
+.advers-countdown-item {
   padding: 0 8px;
   display: flex;
   align-items: center;
   gap: 0 4px;
 }
-.advertisement-countdown-item-time {
+.advers-countdown-item-time {
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -265,7 +277,7 @@ button {
   letter-spacing: -1px;
   color: #f4f6f8;
 }
-.advertisement-countdown-item-type {
+.advers-countdown-item-type {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -273,12 +285,12 @@ button {
   letter-spacing: 0.2px;
   color: #f4f6f8;
 }
-.advertisement-button {
+.advers-button {
   margin-top: 32px;
   display: flex;
   gap: 0 32px;
 }
-.advertisement-button-wishlist {
+.advers-button-wishlist {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -291,10 +303,10 @@ button {
   border-radius: 8px;
   transition: all 0.5s;
 }
-.advertisement-button-wishlist:hover {
+.advers-button-wishlist:hover {
   opacity: 0.3;
 }
-.advertisement-button-wishlist-text {
+.advers-button-wishlist-text {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -304,7 +316,7 @@ button {
   color: #0d1115;
   display: flex;
 }
-.advertisement-button-readmore {
+.advers-button-readmore {
   box-sizing: border-box;
   display: flex;
   width: 180px;
@@ -319,10 +331,10 @@ button {
   border-radius: 8px;
   transition: all 0.5s;
 }
-.advertisement-button-readmore:hover {
+.advers-button-readmore:hover {
   opacity: 0.3;
 }
-.advertisement-button-readmore-text {
+.advers-button-readmore-text {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1429,6 +1441,9 @@ li.active-li .circle-shadow {
   border-top: 1px solid #92a6b9;
   border-bottom: 1px solid #92a6b9;
 }
+.footer a {
+  margin-bottom: 8px;
+}
 .footer-grid {
   margin-top: 26px;
   margin-bottom: 91px;
@@ -1571,9 +1586,113 @@ li.active-li .circle-shadow {
   }
 }
 .main-section {
-  min-height: 100vh;
+  min-height: calc(100vh - 65px);
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
+nav {
+  margin-top: 24px;
+}
+
+.wrapper-view {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 30vh;
+  width: 50%;
+}
+
+.title-text {
+  white-space: nowrap;
+}
+
+.first-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+  z-index: -2;
+}
+
+.bg-blur {
+  background-image: url("../images/bgblur.png");
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(179.54deg, rgba(48, 61, 74, 0.3) -110.88%, rgba(48, 61, 74, 0) 110.14%);
+  backdrop-filter: blur(40px);
+}
+
+canvas {
+  width: 100%;
+  opacity: 0.7;
+}
+
+@-moz-document url-prefix() {
+  canvas {
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .wrapper-view {
+    width: 100%;
+    padding-bottom: 10vh;
+  }
+
+  nav {
+    margin: 0 16px 0 16px;
+  }
+
+  .image-view {
+    margin-top: 10vh;
+    bottom: 0;
+    transform: none;
+    width: 100%;
+    position: relative;
+  }
+  .image-view img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .title-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+    white-space: normal;
+  }
+
+  .advers-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+
+  .advers-countdown-item {
+    flex-direction: column;
+  }
+}
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?c5oqub");
