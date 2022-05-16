@@ -1,0 +1,190 @@
+@media only screen and (max-width: $mobile) {
+  .team {
+    &-title {
+      font-size: 32px !important;
+    }
+    &-description-list {
+      .slick-prev {
+        span {
+          font-size: 24px !important;
+        }
+        left: 5px !important;
+        img {
+          width: 50% !important;
+        }
+      }
+      .slick-next {
+        span {
+          font-size: 24px !important;
+        }
+        right: 5px !important;
+        img {
+          width: 50% !important;
+        }
+      }
+      &-item {
+        h3 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px !important;
+          line-height: 130%;
+          letter-spacing: -0.5px;
+          color: #dfe5ea;
+          padding: 0 42px 0 38px !important;
+        }
+      }
+    }
+  }
+}
+
+.team {
+  margin-top: 128px;
+  &-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: left;
+    letter-spacing: -1px;
+    color: #fdd116;
+    margin-bottom: 64px;
+  }
+  &-description-list {
+    .slick-prev {
+      span {
+        &::before {
+          color: #fdd116;
+        }
+        font-size: 40px;
+      }
+      background-color: transparent;
+      position: absolute;
+      display: block;
+      top: 30%;
+      left: 200px;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+    }
+    .slick-next {
+      span {
+        &::before {
+          color: #fdd116;
+        }
+        font-size: 40px;
+      }
+      background-color: transparent;
+      position: absolute;
+      display: block;
+      top: 30%;
+      right: 200px;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+    }
+    .slick-dots {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 16px;
+      button {
+        font-size: 0;
+        background-color: #dfe5ea;
+        width: 14px;
+        height: 14px;
+        border-radius: 100rem;
+      }
+      .slick-active {
+        transition: all 0.5s;
+        button {
+          background: #fdd116 !important;
+        }
+      }
+    }
+    &-item {
+      h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 130%;
+        letter-spacing: -0.5px;
+        color: #dfe5ea;
+        padding: 0 298.75px 0 288.25px;
+      }
+      &-social {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 32px;
+        margin-bottom: 64px;
+        .fb-social {
+          cursor: pointer;
+          font-size: 32px;
+          &::before {
+            color: #fdd116;
+          }
+        }
+        .ins-social {
+          cursor: pointer;
+          font-size: 32px;
+          &::before {
+            color: #fdd116;
+          }
+        }
+      }
+    }
+  }
+  &-gallery {
+    padding: 32px 0px;
+    margin-bottom: 64px;
+
+    .slick-track {
+      display: flex;
+      transition: all 1s;
+      align-items: center;
+      .slick-active,
+      .slick-center {
+        transform: scale(1.25);
+        padding: 32.5px 25px;
+        border-radius: 8px;
+        img {
+          border-radius: 8px;
+        }
+        .team-gallery-member-info {
+          display: block;
+        }
+      }
+    }
+    &-member {
+      position: relative;
+      &-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #374756;
+        display: none;
+        width: 100%;
+        padding-left: 16px;
+        &-job {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 130%;
+          letter-spacing: -1px;
+          color: #fdd116;
+          margin-top: 16px;
+        }
+        &-des {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 130%;
+          letter-spacing: -0.5px;
+          margin-top: 8px;
+          margin-bottom: 16px;
+          color: #f4f6f8;
+        }
+      }
+    }
+  }
+}

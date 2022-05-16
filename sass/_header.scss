@@ -1,0 +1,114 @@
+@media only screen and (max-width: $mobile) {
+  .header {
+    display: none !important;
+  }
+  .header_mobile {
+    margin-top: 16px !important;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    .header_mobile-logo {
+      cursor: pointer;
+    }
+    .header_mobile-menu-btn {
+      width: 62.25px;
+      display: flex;
+      justify-content: flex-end;
+      cursor: pointer;
+    }
+    .header_mobile-language {
+      cursor: pointer;
+      border: 1px solid #f4f6f8;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      color: #f4f6f8;
+      padding: 8px !important;
+      &-text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: calc(11 / 16.8);
+        text-align: center;
+        font-style: normal;
+        margin: 0 5px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+.header_mobile {
+  display: none;
+}
+
+.header {
+  &-image-logo {
+    width: 672px;
+    max-width: 672px;
+    cursor: pointer;
+  }
+  display: flex;
+  align-items: center;
+  &-logo {
+    // margin-right: 413.29px;
+  }
+  &-menu {
+    flex-grow: 1;
+    list-style-type: none;
+    display: flex;
+    gap: 0 32px;
+    &-item {
+      color: #fffceb;
+      font-style: normal;
+      font-weight: 600;
+      line-height: calc(61 / 28.6);
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: -1px;
+      cursor: pointer;
+      transition: all 0.5s;
+      white-space: nowrap;
+      .header-menu-text {
+        &:link {
+          color: #fffceb;
+        }
+        &:link {
+          color: #fffceb;
+        }
+
+        &:visited {
+          color: #fffceb;
+        }
+
+        &:hover {
+          color: #fdd116;
+          border-bottom: 1px solid #fdd116;
+        }
+
+        &:active {
+          color: #fffceb;
+        }
+      }
+    }
+  }
+  &-language {
+    margin-left: 32.79px;
+    border: 1px solid #f4f6f8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: #f4f6f8;
+    padding: 4px 8px;
+    margin-top: 5px;
+    cursor: pointer;
+    &-text {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: calc(11 / 16.8);
+      text-align: center;
+      font-style: normal;
+      margin: 0 5px;
+      line-height: 140%;
+    }
+  }
+}

@@ -1,0 +1,226 @@
+.timeline {
+  &-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: -1px;
+    color: #fdd116;
+    margin-bottom: 64px;
+  }
+  ol {
+    padding: 256px 0 320px 0 !important;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .timeline {
+    &-title {
+      margin-bottom: 64px !important;
+      font-size: 32px !important;
+    }
+  }
+  .timeline ol li:nth-child(odd) .content {
+    &-title {
+      padding-top: 53px !important;
+    }
+  }
+}
+
+@keyframes width {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 94%;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.circle-shadow {
+  width: 30px;
+  height: 30px;
+  background: rgba(253, 209, 22, 0.1);
+  z-index: 100;
+  position: absolute;
+  top: -7px;
+  right: -6px;
+  border-radius: 50%;
+}
+
+.timeline {
+  &-scroll {
+    white-space: nowrap;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 320px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 205px;
+  height: 8.3px;
+  background: #fdd1160d;
+}
+
+.timeline ol li:last-child {
+  width: 160px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 12px;
+}
+
+.timeline ol li:nth-child(even) .main {
+  height: 100px;
+  position: absolute;
+  left: calc(100% + -40px);
+  width: 150px;
+  font-size: 1rem;
+  white-space: normal;
+  top: calc(100% + 20px);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #f4f6f8;
+}
+
+.timeline ol li:nth-child(odd) .main {
+  height: 100px;
+  position: absolute;
+  left: calc(100% + -40px);
+  width: 150px;
+  font-size: 1rem;
+  white-space: normal;
+  top: calc(100% - 60px);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #f4f6f8;
+}
+
+.timeline ol li:nth-child(odd) .content {
+  position: absolute;
+  left: calc(100% + 3.5px);
+  width: 280px;
+  padding: 15px 15px 0px 17px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background-color: transparent;
+  border-left: 1px solid #fdd116;
+  &-title {
+    padding-top: 110px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fdd116;
+  }
+  &-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #f4f6f8;
+  }
+}
+
+li.active-li .circle-shadow {
+  animation: opacity 1s infinite;
+  box-shadow: 0px 0px 16px #fdd116;
+}
+
+.timeline ol li.active-li::after {
+  content: "";
+  width: 94%;
+  position: absolute;
+  margin-top: 3px;
+  border: 1px dashed #fdd116;
+  animation: width 1s infinite;
+}
+
+.timeline ol li:nth-child(even) .content {
+  position: absolute;
+  left: calc(100% + 4.5px);
+  width: 280px;
+  padding: 0px 15px 15px 17px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background-color: transparent;
+  border-left: 1px solid #fdd116;
+  &-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fdd116;
+    margin-bottom: 3px;
+  }
+  &-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #f4f6f8;
+    margin-bottom: 50px;
+  }
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #eed26b;
+  width: 16.6px;
+  height: 16.6px;
+  transform: translate(77%, -4px);
+  border-radius: 50%;
+}
+
+.timeline ol li:nth-child(even) .content {
+  top: -3px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(even) .content::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(odd) .content {
+  top: calc(100% + 4px);
+}
+
+.timeline ol li:nth-child(odd) .content::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
