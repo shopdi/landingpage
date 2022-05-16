@@ -847,6 +847,7 @@ button {
   font-size: 12px;
   line-height: 140%;
   color: #f4f6f8;
+  text-align: right;
 }
 .token-list-item-content-right-description {
   font-style: normal;
@@ -1733,7 +1734,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: calc(100vw - 17px);
   height: 100vh;
   backdrop-filter: blur(40px);
   /* Note: backdrop-filter has minimal browser support */
@@ -1746,7 +1747,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: calc(100vw - 17px);
   height: 100vh;
   z-index: -1;
   background: linear-gradient(179.54deg, rgba(48, 61, 74, 0.3) -110.88%, rgba(48, 61, 74, 0) 110.14%);
