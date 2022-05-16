@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopdi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
   <link href="./css/opensans.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/app.css" />
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -13,38 +16,44 @@
 
 <body>
   <div class="wrapper">
+    <div class="box-menu">
+      <div class="header_mobile">
+        <div class="header_mobile-language">
+          <img srcset="./images/vietnam.png 2x" />
+          <span class="header_mobile-language-text">VI</span>
+          <img srcset="./images/arrow-down.png 2x" />
+        </div>
+        <img class="header_mobile-logo" srcset="./images/logo_mobile.png 2x" />
+        <div class="header_mobile-menu-btn">
+          <div class="menu-icon">
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="mb-navigation">
+        <div class="mb-navigation-list-menu">
+          <div class="mb-navigation-list-menu-item ">
+            <a href="#home" class="mb-navigation-list-menu-item-text active">Home</a>
+          </div>
+          <div class="mb-navigation-list-menu-item">
+            <a href="#aboutus" class="mb-navigation-list-menu-item-text">About us</a>
+          </div>
+          <div class="mb-navigation-list-menu-item">
+            <a href="#partners" class="mb-navigation-list-menu-item-text">Partners</a>
+          </div>
+          <div class="mb-navigation-list-menu-item">
+            <a href="#contact" class="mb-navigation-list-menu-item-text">Contact</a>
+          </div>
+          <div class="mb-navigation-list-menu-item">
+            <a class="mb-navigation-list-menu-item-text">Whitepaper</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <nav class="container">
-    <div class="mb-navigation">
-      <div id="btn_menu_close" class="mb-navigation-close"><img src="./images/close.svg" /></div>
-      <div class="mb-navigation-list-menu">
-        <div class="mb-navigation-list-menu-item active">
-          <a href="#home" class="mb-navigation-list-menu-item-text">Home</a>
-        </div>
-        <div class="mb-navigation-list-menu-item">
-          <a href="#aboutus" class="mb-navigation-list-menu-item-text">About us</a>
-        </div>
-        <div class="mb-navigation-list-menu-item">
-          <a href="#partners" class="mb-navigation-list-menu-item-text">Partners</a>
-        </div>
-        <div class="mb-navigation-list-menu-item">
-          <a href="#contact" class="mb-navigation-list-menu-item-text">Contact</a>
-        </div>
-        <div class="mb-navigation-list-menu-item">
-          <a class="mb-navigation-list-menu-item-text">Whitepaper</a>
-        </div>
-      </div>
-    </div>
-    <div class="header_mobile">
-      <div class="header_mobile-language">
-        <img srcset="./images/vietnam.png 2x" />
-        <span class="header_mobile-language-text">VI</span>
-        <img srcset="./images/arrow-down.png 2x" />
-      </div>
-      <img class="header_mobile-logo" srcset="./images/logo_mobile.png 2x" />
-      <div class="header_mobile-menu-btn">
-        <img id="btn_menu_open" srcset="./images/menu_icon.svg" />
-      </div>
-    </div>
     <div class="header">
       <div class="header-image-logo">
         <img class="header-logo" srcset="./images/logo.png 2x" />
@@ -289,9 +298,9 @@
       <div class="token-chart">
         <h1 class="token-chart-title">TOKENOMICS</h1>
         <h3 class="token-chart-name">Token Valuation</h3>
-        <h5 class="token-chart-price">$42.445.000</h3>
+        <h5 class="token-chart-price">$67.500.000</h3>
           <div class="token-chart-image">
-            <img src="./img/Group 55868 1.png" />
+            <img src="./images/chart(1).png" />
           </div>
       </div>
       <div class="token-list">
@@ -301,17 +310,17 @@
           <div class="token-list-item-content">
             <div class="token-list-item-content-left">
               <div class="token-list-item-content-left-title">
-                <div class="token-list-item-content-left-title-percent">0.2%</div>
-                <div class="token-list-item-content-left-title-name">Public sale</div>
+                <div class="token-list-item-content-left-title-percent">5.00%</div>
+                <div class="token-list-item-content-left-title-name">Seed sale</div>
               </div>
-              <div class="token-list-item-content-left-description">25% TGE, then linear monthly vesting in 04 months.
+              <div class="token-list-item-content-left-description">5% TGE, 3 month cliff, then linear vesting 18 months
               </div>
             </div>
             <div class="token-list-item-content-right">
               <div class="token-list-item-content-right-title">
                 Tokens
               </div>
-              <div class="token-list-item-content-right-description">200.000</div>
+              <div class="token-list-item-content-right-description">50.000.000</div>
             </div>
           </div>
         </div>
@@ -321,17 +330,17 @@
           <div class="token-list-item-content">
             <div class="token-list-item-content-left">
               <div class="token-list-item-content-left-title">
-                <div class="token-list-item-content-left-title-percent">0.2%</div>
-                <div class="token-list-item-content-left-title-name">Public sale</div>
+                <div class="token-list-item-content-left-title-percent">9.00%</div>
+                <div class="token-list-item-content-left-title-name">Private sale</div>
               </div>
-              <div class="token-list-item-content-left-description">25% TGE, then linear monthly vesting in 04 months.
+              <div class="token-list-item-content-left-description">10% TGE, 3 month cliff, then linear vesting 18 months
               </div>
             </div>
             <div class="token-list-item-content-right">
               <div class="token-list-item-content-right-title">
                 Tokens
               </div>
-              <div class="token-list-item-content-right-description">200.000</div>
+              <div class="token-list-item-content-right-description">90.000.000</div>
             </div>
           </div>
         </div>
@@ -341,17 +350,17 @@
           <div class="token-list-item-content">
             <div class="token-list-item-content-left">
               <div class="token-list-item-content-left-title">
-                <div class="token-list-item-content-left-title-percent">0.2%</div>
+                <div class="token-list-item-content-left-title-percent">1.00%</div>
                 <div class="token-list-item-content-left-title-name">Public sale</div>
               </div>
-              <div class="token-list-item-content-left-description">25% TGE, then linear monthly vesting in 04 months.
+              <div class="token-list-item-content-left-description">25% TGE, 1 month cliff, then linear vesting 04 months
               </div>
             </div>
             <div class="token-list-item-content-right">
               <div class="token-list-item-content-right-title">
                 Tokens
               </div>
-              <div class="token-list-item-content-right-description">200.000</div>
+              <div class="token-list-item-content-right-description">10.000.000</div>
             </div>
           </div>
         </div>
@@ -361,17 +370,17 @@
           <div class="token-list-item-content">
             <div class="token-list-item-content-left">
               <div class="token-list-item-content-left-title">
-                <div class="token-list-item-content-left-title-percent">0.2%</div>
-                <div class="token-list-item-content-left-title-name">Public sale</div>
+                <div class="token-list-item-content-left-title-percent">38.00%</div>
+                <div class="token-list-item-content-left-title-name">Shop to earn</div>
               </div>
-              <div class="token-list-item-content-left-description">25% TGE, then linear monthly vesting in 04 months.
+              <div class="token-list-item-content-left-description">5% each month, TGE when app launchs
               </div>
             </div>
             <div class="token-list-item-content-right">
               <div class="token-list-item-content-right-title">
                 Tokens
               </div>
-              <div class="token-list-item-content-right-description">200.000</div>
+              <div class="token-list-item-content-right-description">380.000.000</div>
             </div>
           </div>
         </div>
@@ -381,17 +390,17 @@
           <div class="token-list-item-content">
             <div class="token-list-item-content-left">
               <div class="token-list-item-content-left-title">
-                <div class="token-list-item-content-left-title-percent">0.2%</div>
-                <div class="token-list-item-content-left-title-name">Public sale</div>
+                <div class="token-list-item-content-left-title-percent">10.00%</div>
+                <div class="token-list-item-content-left-title-name">Liquidity</div>
               </div>
-              <div class="token-list-item-content-left-description">25% TGE, then linear monthly vesting in 04 months.
+              <div class="token-list-item-content-left-description">10% TGE, then vesting 18 months
               </div>
             </div>
             <div class="token-list-item-content-right">
               <div class="token-list-item-content-right-title">
                 Tokens
               </div>
-              <div class="token-list-item-content-right-description">200.000</div>
+              <div class="token-list-item-content-right-description">100.000.000</div>
             </div>
           </div>
         </div>
@@ -401,17 +410,17 @@
           <div class="token-list-item-content">
             <div class="token-list-item-content-left">
               <div class="token-list-item-content-left-title">
-                <div class="token-list-item-content-left-title-percent">0.2%</div>
-                <div class="token-list-item-content-left-title-name">Public sale</div>
+                <div class="token-list-item-content-left-title-percent">15.00%</div>
+                <div class="token-list-item-content-left-title-name">Ecosystem</div>
               </div>
-              <div class="token-list-item-content-left-description">25% TGE, then linear monthly vesting in 04 months.
+              <div class="token-list-item-content-left-description">12 months lock up, then vesting for 24 months
               </div>
             </div>
             <div class="token-list-item-content-right">
               <div class="token-list-item-content-right-title">
                 Tokens
               </div>
-              <div class="token-list-item-content-right-description">200.000</div>
+              <div class="token-list-item-content-right-description">150.000.000</div>
             </div>
           </div>
         </div>
@@ -421,17 +430,17 @@
           <div class="token-list-item-content">
             <div class="token-list-item-content-left">
               <div class="token-list-item-content-left-title">
-                <div class="token-list-item-content-left-title-percent">0.2%</div>
-                <div class="token-list-item-content-left-title-name">Public sale</div>
+                <div class="token-list-item-content-left-title-percent">6.00%</div>
+                <div class="token-list-item-content-left-title-name">Founder & team</div>
               </div>
-              <div class="token-list-item-content-left-description">25% TGE, then linear monthly vesting in 04 months.
+              <div class="token-list-item-content-left-description">12 months lock up, then 2.5% monthly
               </div>
             </div>
             <div class="token-list-item-content-right">
               <div class="token-list-item-content-right-title">
                 Tokens
               </div>
-              <div class="token-list-item-content-right-description">200.000</div>
+              <div class="token-list-item-content-right-description">60.000.000</div>
             </div>
           </div>
         </div>
@@ -441,17 +450,37 @@
           <div class="token-list-item-content">
             <div class="token-list-item-content-left">
               <div class="token-list-item-content-left-title">
-                <div class="token-list-item-content-left-title-percent">0.2%</div>
-                <div class="token-list-item-content-left-title-name">Public sale</div>
+                <div class="token-list-item-content-left-title-percent">5.00%</div>
+                <div class="token-list-item-content-left-title-name">Advisor</div>
               </div>
-              <div class="token-list-item-content-left-description">25% TGE, then linear monthly vesting in 04 months.
+              <div class="token-list-item-content-left-description">09 months lock up, then 7.5% monthly
               </div>
             </div>
             <div class="token-list-item-content-right">
               <div class="token-list-item-content-right-title">
                 Tokens
               </div>
-              <div class="token-list-item-content-right-description">200.000</div>
+              <div class="token-list-item-content-right-description">50.000.000</div>
+            </div>
+          </div>
+        </div>
+        <div class="token-list-item">
+          <div class="token-list-item-line">
+          </div>
+          <div class="token-list-item-content">
+            <div class="token-list-item-content-left">
+              <div class="token-list-item-content-left-title">
+                <div class="token-list-item-content-left-title-percent">5.00%</div>
+                <div class="token-list-item-content-left-title-name">Marketing & Partnership</div>
+              </div>
+              <div class="token-list-item-content-left-description">1% TGE, then linear vesting in 36 months
+              </div>
+            </div>
+            <div class="token-list-item-content-right">
+              <div class="token-list-item-content-right-title">
+                Tokens
+              </div>
+              <div class="token-list-item-content-right-description">50.000.000</div>
             </div>
           </div>
         </div>
@@ -465,96 +494,123 @@
             <div class="circle">
               <div class="circle-shadow"></div>
             </div>
-            <div class="main">Mid of Q4 2021</div>
+            <div class="main">Tháng 6/2022</div>
             <div class="content">
-              <div class="content-title">Now</div>
-              <div class="content-text">EVM support for parachains
-                SubQuery Academy
-                Proof of indexing
-                Premium enterprise service</div>
+              <div class="content-title">&nbsp;</div>
+              <div class="content-text">
+                Ra mắt sàn thương mại điện tử giá ẩn
+                Hợp tác với các KOL và các nhãn hàng cao cấp.
+                Phát triển nhà bán.
+                Phát triển cộng đồng.</div>
             </div>
           </li>
           <li>
             <div class="circle">
               <div class="circle-shadow"></div>
             </div>
-            <div class="main">End of Q4 2021</div>
+            <div class="main">Tháng 7-8/2022</div>
             <div class="content">
-              <div class="content-title">Milestone 1</div>
-              <div class="content-text">SubQuery Builders/Grants Program
-                SQT Network contract internal MVP
-                Coordinator and client SDK implementations
-                EU cluster</div>
+              <div class="content-title">&nbsp;</div>
+              <div class="content-text">
+                &nbsp;</div>
             </div>
           </li>
           <li>
             <div class="circle">
               <div class="circle-shadow"></div>
             </div>
-            <div class="main">Mid of Q1 2022</div>
+            <div class="main">Tháng 9/2022</div>
             <div class="content">
-              <div class="content-title">Milestone 2</div>
-              <div class="content-text">Public testnet launch
-                SubQuery Network Explorer and dApp
-                Point-in-time indexing
-                SQT Network contract v1 and external code audit
-                Internal micropayments testing
-                Enterprise health monitoring</div>
+              <div class="content-title">&nbsp;</div>
+              <div class="content-text">
+                &nbsp;</div>
             </div>
           </li>
           <li>
             <div class="circle">
               <div class="circle-shadow"></div>
             </div>
-            <div class="main">End of Q1 2022</div>
+            <div class="main">Tháng 11/2022</div>
             <div class="content">
-              <div class="content-title">Milestone 3
-              </div>
-              <div class="content-text">SQT token generation event
-                Public incentivised testnet launch
-                Data traffic insights and reporting
-                Scalable intelligent routing</div>
+              <div class="content-title">&nbsp;</div>
+              <div class="content-text">
+                &nbsp;</div>
             </div>
           </li>
           <li>
             <div class="circle">
               <div class="circle-shadow"></div>
             </div>
-            <div class="main">Mid Q2 2022</div>
+            <div class="main">Tháng 01/2023</div>
             <div class="content">
-              <div class="content-title">Milestone 4
-              </div>
-              <div class="content-text">Launch of the SubQuery Foundation
-                Finalise research for other Layer-1 chains
-                Liquidity mining program</div>
+              <div class="content-title">&nbsp;</div>
+              <div class="content-text">
+                Ra mắt sàn thương mại điện tử global
+                Ra mắt học viện Shopdi.
+                Ra mắt trung tâm nhà bán (Seller Center).
+                Phát triển thêm nhà bán.</div>
             </div>
           </li>
           <li>
             <div class="circle">
               <div class="circle-shadow"></div>
             </div>
-            <div class="main">End of Q2 2022</div>
+            <div class="main">Tháng 3/2023</div>
             <div class="content">
-              <div class="content-title">Milestone 5</div>
-              <div class="content-text">EVM support for parachains
-                SubQuery Builders/Grants Program
-                SQT Network contract internal MVP
-                Coordinator and client SDK implementations
-                EU cluster</div>
+              <!-- <div class="content-title">Integration Livestream with Tiktok, Facebook.</div> -->
+              <div class="content-text">
+                Tích hợp live stream với Tiktok, Facebook.
+                Ra mắt nền tảng KOL Gamification.
+                Ra mắt nền tảng KOC Gamification.
+                Minh bạch hoá giao dịch trên Blockchain.</div>
             </div>
           </li>
           <li>
             <div class="circle">
               <div class="circle-shadow"></div>
             </div>
-            <div class="main">Mid of Q3 2022</div>
+            <div class="main">Tháng 6/2023</div>
             <div class="content">
-              <div class="content-title">Milestone 6</div>
-              <div class="content-text">EVM support for parachains
-                SubQuery Builders/Grants Program
-                SQT Network contract internal MVP
-                Coordinator and client SDK implementations
-                EU cluster</div>
+              <div class="content-title">&nbsp;</div>
+              <div class="content-text">Ra mắt sàn bán hàng thứ cấp.
+                Ra mắt nền tảng quảng cáo liên dự án Blockchain.
+                Ra mắt nền tảng Shop Builder.
+                Ra mắt nền tảng dữ liệu lớn khách hàng (CDP).
+                Đạt 1 triệu User.</div>
+            </div>
+          </li>
+          <li>
+            <div class="circle">
+              <div class="circle-shadow"></div>
+            </div>
+            <div class="main">Tháng 12/2023</div>
+            <div class="content">
+              <!-- <div class="content-title">&nbsp;</div> -->
+              <div class="content-text">
+                Sẵn sàng để phát triển các thị trường khác. Ra mắt sàn bên Singapore.
+                Tích hợp với các dự án Metaverse.
+                Ra mắt nền tảng phân tích dữ liệu AI.</div>
+            </div>
+          </li>
+          <li>
+            <div class="circle">
+              <div class="circle-shadow"></div>
+            </div>
+            <div class="main">Tháng 03/2024</div>
+            <div class="content">
+              <div class="content-title">&nbsp;</div>
+              <div class="content-text">
+                Mở rộng thị trường Đông Nam Á</div>
+            </div>
+          </li>
+          <li>
+            <div class="circle">
+              <div class="circle-shadow"></div>
+            </div>
+            <div class="main">Tháng 09/2024</div>
+            <div class="content">
+              <div class="content-text">
+                Mở rộng thị trường Châu Mỹ</div>
             </div>
           </li>
         </ol>

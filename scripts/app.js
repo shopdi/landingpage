@@ -30,16 +30,10 @@ $(".team-description-list").slick({
   nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-chevron-right"></button>`,
 });
 $(document).ready(function () {
-  $("#btn_menu_open").on("click", () => {
-    $(".mb-navigation").css("left", "0px");
-    $(".mb-navigation").css("opacity", "1");
-  });
 
-  $("#btn_menu_close").on("click", () => {
-    $(".mb-navigation").css("left", "-1000px");
-    $(".mb-navigation").css("opacity", "0");
+  $(".mb-navigation-list-menu-item-text").on("click", () => {
+    $("body").removeClass("nav-active");
   });
-
   scrollHorizontal(".timeline-scroll");
   scrollHorizontal(".partners-brand-item");
   countdown();
@@ -52,7 +46,50 @@ function scrollHorizontal(classname) {
     scrollBrand.scrollLeft += evt.deltaY;
   });
 }
+console.clear();
+const app = (() => {
+    let body;
+    let menu;
+    let menuItems;
+    let nav;
+    const init = () => {
+        body = document.querySelector("body");
+        menu = document.querySelector(".menu-icon");
+        nav = document.querySelector(".nav");
+        applyListeners();
+    };
+    const applyListeners = () => {
+        menu.addEventListener("click", () => toggleClass(body, "nav-active"));
+    };
+    const toggleClass = (element, stringClass) => {
+        if (element.classList.contains(stringClass))
+            element.classList.remove(stringClass);
+        else element.classList.add(stringClass);
+    };
+    init();
+})();
+const sections = document.querySelectorAll("section[id]");
 
+  function scrollActive() {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach((current) => {
+      const sectionHeight = current.offsetHeight,
+        sectionTop = current.offsetTop - 120,
+        sectionId = current.getAttribute("id");
+      console.log(current.offsetTop)
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document
+          .querySelector(".mb-navigation-list-menu a[href*=" + sectionId + "]")
+          .classList.add("active");
+      } else {
+        document
+          .querySelector(".mb-navigation-list-menu a[href*=" + sectionId + "]")
+          .classList.remove("active");
+      }
+    });
+  }
+  window.addEventListener("scroll", scrollActive);
 function countdown() {
   var countDownDate = new Date("Aug 5, 2022 15:37:25").getTime();
 
@@ -272,3 +309,5 @@ canvas.onmousemove = function(e) {
   mouse.x = e.clientX;
   mouse.y = e.clientY;
 }
+
+
