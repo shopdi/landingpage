@@ -350,6 +350,7 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #fdd116;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 992px) {
@@ -433,6 +434,7 @@ button {
   text-align: left;
   letter-spacing: 0.2px;
   color: #dfe5ea;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 992px) {
@@ -572,6 +574,7 @@ button {
   text-align: left;
   color: #dfe5ea;
   margin-bottom: 8px;
+  text-align: justify;
 }
 
 .feature {
@@ -1255,6 +1258,7 @@ li.active-li .circle-shadow {
   letter-spacing: -0.5px;
   color: #dfe5ea;
   padding: 0 298.75px 0 288.25px;
+  text-align: justify;
 }
 .team-description-list-item-social {
   margin-top: 32px;
