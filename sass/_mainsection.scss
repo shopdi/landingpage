@@ -47,6 +47,7 @@ nav {
     rgba(48, 61, 74, 0) 110.14%
   );
   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
 canvas {
   width: 100%;

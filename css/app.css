@@ -2,6 +2,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1461,9 +1465,9 @@ li.active-li .circle-shadow {
 }
 .footer-grid-column-social {
   display: flex;
-  gap: 0 32px;
   margin-bottom: 28px;
   cursor: pointer;
+  justify-content: space-around;
 }
 .footer-grid-column-social span:hover {
   font-size: 22px;
@@ -1752,6 +1756,7 @@ nav {
   z-index: -1;
   background: linear-gradient(179.54deg, rgba(48, 61, 74, 0.3) -110.88%, rgba(48, 61, 74, 0) 110.14%);
   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
 
 canvas {
