@@ -217,7 +217,7 @@ sum += (radius * radius) / (dx * dx + dy * dy);
 }
 
 if (sum >= 0.99) {
-gl_FragColor = vec4(mix(vec3(x / WIDTH, y / HEIGHT, 1.0), vec3(0.992,1,0.086), max(1.0, 1.0 - (sum - 0.99) * 100.0)), 0.1);
+gl_FragColor = vec4(mix(vec3(x / WIDTH, y / HEIGHT, 1.0), vec3(0.992,0.85,0.03), max(1.0, 1.0 - (sum - 0.8) * 100.0)), 0.1);
 return;
 }
 

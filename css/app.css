@@ -1746,7 +1746,7 @@ nav {
   width: calc(100vw - 17px);
   height: 100vh;
   backdrop-filter: blur(40px);
-  /* Note: backdrop-filter has minimal browser support */
+  -webkit-backdrop-filter: blur(40px);
   z-index: -2;
 }
 
@@ -1770,8 +1770,8 @@ canvas {
 }
 
 @-moz-document url-prefix() {
-  canvas {
-    opacity: 0.5;
+  .bg-blur, .first-view {
+    filter: blur(40px);
   }
 }
 @media only screen and (max-width: 992px) {
