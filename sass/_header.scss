@@ -17,22 +17,7 @@
       cursor: pointer;
     }
     .header_mobile-language {
-      cursor: pointer;
-      border: 1px solid #f4f6f8;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      color: #f4f6f8;
-      padding: 8px !important;
-      &-text {
-        font-size: 12px;
-        font-weight: 400;
-        line-height: calc(11 / 16.8);
-        text-align: center;
-        font-style: normal;
-        margin: 0 5px;
-        line-height: 145%;
-      }
+      width: 62.25px;
     }
   }
 }

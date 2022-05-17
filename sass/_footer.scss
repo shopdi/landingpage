@@ -37,7 +37,8 @@
         display: flex;
         margin-bottom: 28px;
         cursor: pointer;
-        justify-content: space-around;
+        justify-content: space-between;
+        max-width: 235px;
       }
       &-title-down {
         font-style: normal;

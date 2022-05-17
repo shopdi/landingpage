@@ -102,22 +102,7 @@ button {
     cursor: pointer;
   }
   .header_mobile .header_mobile-language {
-    cursor: pointer;
-    border: 1px solid #f4f6f8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    color: #f4f6f8;
-    padding: 8px !important;
-  }
-  .header_mobile .header_mobile-language-text {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 0.6547619048;
-    text-align: center;
-    font-style: normal;
-    margin: 0 5px;
-    line-height: 145%;
+    width: 62.25px;
   }
 }
 .header_mobile {
@@ -1476,7 +1461,8 @@ li.active-li .circle-shadow {
   display: flex;
   margin-bottom: 28px;
   cursor: pointer;
-  justify-content: space-around;
+  justify-content: space-between;
+  max-width: 235px;
 }
 .footer-grid-column-social span:hover {
   font-size: 22px;
@@ -1557,7 +1543,6 @@ nav {
   left: 0;
   width: 100%;
   z-index: 2;
-  background: #2F3D4A;
 }
 .box-menu .header_mobile {
   margin: 0 16px;

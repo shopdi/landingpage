@@ -1,5 +1,4 @@
 
-document.querySelector('.timeline-scroll').addEventListener('wheel', preventScroll, {passive: false});
 
 function preventScroll(e){
     e.preventDefault();
@@ -47,14 +46,7 @@ $(document).ready(function () {
   countdown();
 });
 
-function scrollHorizontal(classname) {
-  const scrollBrand = document.querySelector(classname);
-  scrollBrand.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollBrand.scrollLeft += evt.deltaY;
-  });
-}
-console.clear();
+
 const app = (() => {
   let body;
   let menu;
