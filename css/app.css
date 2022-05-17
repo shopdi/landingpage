@@ -265,6 +265,7 @@ button {
   line-height: 130%;
   letter-spacing: -1px;
   color: #f4f6f8;
+  text-align: justify;
 }
 .advers-countdown {
   margin-top: 32px;
@@ -350,7 +351,6 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #fdd116;
-  text-align: justify;
 }
 
 @media only screen and (max-width: 992px) {
@@ -539,6 +539,7 @@ button {
   text-align: left;
   color: #dfe5ea;
   margin-bottom: 8px;
+  text-align: justify;
 }
 .business-list-item-even {
   display: grid;
