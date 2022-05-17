@@ -810,15 +810,15 @@ section h2 {
     width: 200px !important;
   }
 }
-.token {
+.tokenomics {
   margin-top: 128px;
   margin-bottom: 128px;
+}
+
+.token {
   display: grid;
   grid-gap: 0 20px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.token-list {
-  margin-top: 112.55px;
 }
 .token-list {
   display: flex;
