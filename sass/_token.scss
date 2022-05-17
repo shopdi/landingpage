@@ -63,7 +63,7 @@
       border-radius: 10px;
       &-line {
         width: 5px;
-        height: 72px;
+        height: 100%;
         margin-top: 1px;
         background: #eed26b;
         border-radius: 10px 0px 0px 10px;
@@ -105,10 +105,8 @@
             font-size: 12px;
             line-height: 145%;
             color: #f4f6f8;
-            text-overflow: ellipsis;
             width: 400px;
-            overflow: hidden;
-            white-space: nowrap;
+
           }
           &-title {
             display: flex;

@@ -14,7 +14,9 @@ button {
   max-width: 1440px;
   margin: 0 auto;
 }
-
+.feature .feature-list-item.slick-slide:not(.slick-center){
+  transition: all 0.5s;
+}
 
 @media only screen and (max-width: 1500px) {
   .wrapper {

@@ -1,25 +1,15 @@
-@media only screen and (max-width: $mobile) {
-  .aboutus {
-    &-name {
-      font-size: 32px !important;
-    }
-    &-brand {
-      grid-template-columns: none !important;
-      &-item {
-        gap: 0 !important;
-        padding: 0 !important;
-        &-title {
-          margin-top: 32px;
-          margin-bottom: 9px;
-        }
-      }
-    }
-  }
-}
+
 
 .aboutus {
   margin-bottom: 128px;
   margin-top: 40px;
+  .wrap-core-value{
+    width: 200px;
+    margin: 0 auto;
+    p{
+      text-align: left;
+    }
+  }
   &-name {
     font-style: normal;
     font-weight: 600;
@@ -69,17 +59,36 @@
         font-size: 20px;
         line-height: 145%;
         color: #f4f6f8;
-        margin-bottom: 32px;
+        margin-bottom: 8px;
+        margin-top: 32px;
       }
       &-description {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 145%;
-        text-align: left;
+        text-align: center;
         letter-spacing: 0.2px;
         color: #dfe5ea;
         margin-top: 8px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .aboutus {
+    &-name {
+      font-size: 32px;
+    }
+    &-brand {
+      grid-template-columns: none;
+      &-item {
+        padding: 0;
+        margin-bottom: 32px;
+        &-title {
+          margin-top: 24px;
+          margin-bottom: 9px;
+        }
       }
     }
   }

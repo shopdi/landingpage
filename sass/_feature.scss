@@ -254,25 +254,19 @@
 @media only screen and (max-width: $mobile) {
   .feature {
     &-name {
-      position: relative !important;
-      margin-bottom: 32px !important;
-      font-size: 32px !important;
+      position: relative;
+      margin-bottom: 64px;
+      font-size: 32px;
     }
 
     .feature-list {
       padding-bottom: 64px;
 
-      .slick-prev {
-        right: inherit;
-        left: 10px;
-      }
 
-      .slick-next {
-        right: inherit;
-        left: 64px;
-      }
     }
-
+    .slick-dots{
+      top: -55px;
+    }
     .feature-list-item-image {
       justify-content: center !important;
       img {

@@ -1,53 +1,3 @@
-@media only screen and (max-width: $mobile) {
-  .business {
-    &-name {
-      font-size: 32px !important;
-    }
-    margin-bottom: 64px !important;
-
-    &-description {
-      font-size: 16px !important;
-      text-align: center !important;
-      font-style: normal !important;
-    }
-    &-list {
-      gap: 32px 0 !important;
-      &-item-odd {
-        display: grid;
-        grid-template-columns: none !important;
-        grid-gap: 32px 0;
-        &-left {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 0 !important;
-          order: 2 !important;
-        }
-        &-right {
-          order: 1 !important;
-          &-title {
-            font-size: 24px !important;
-          }
-        }
-      }
-      &-item-even {
-        display: grid;
-        grid-gap: 32px 0;
-        grid-template-columns: none !important;
-        &-left {
-          display: flex;
-          justify-content: center !important;
-          align-items: center !important;
-        }
-        &-right {
-          &-title {
-            font-size: 24px !important;
-          }
-        }
-      }
-    }
-  }
-}
 
 .business {
   &-name {
@@ -64,7 +14,6 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 145%;
-    text-align: left;
     letter-spacing: -1px;
     color: #f4f6f8;
     margin-bottom: 64px;
@@ -140,6 +89,57 @@
           color: #dfe5ea;
           margin-bottom: 8px;
           text-align: justify;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .business {
+    &-name {
+      font-size: 32px !important;
+    }
+    margin-bottom: 64px !important;
+
+    &-description {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 125%;
+    }
+    &-list {
+      gap: 32px 0 !important;
+      &-item-odd {
+        display: grid;
+        grid-template-columns: none !important;
+        grid-gap: 16px 0;
+        &-left {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 !important;
+          order: 2 !important;
+        }
+        &-right {
+          order: 1 !important;
+          &-title {
+            font-size: 24px !important;
+          }
+        }
+      }
+      &-item-even {
+        display: grid;
+        grid-gap: 16px 0;
+        grid-template-columns: none !important;
+        &-left {
+          display: flex;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+        &-right {
+          &-title {
+            font-size: 24px !important;
+          }
         }
       }
     }

@@ -52,7 +52,7 @@
   z-index: 100;
   position: absolute;
   top: -7px;
-  right: -6px;
+  right: -7px;
   border-radius: 50%;
 }
 
@@ -168,7 +168,7 @@ li.active-li .circle-shadow {
 
 .timeline ol li:nth-child(even) .content {
   position: absolute;
-  left: calc(100% + 4.5px);
+  left: calc(100% + 3.5px);
   width: 280px;
   padding: 0px 15px 15px 17px;
   font-size: 1rem;

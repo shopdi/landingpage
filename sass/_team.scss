@@ -118,11 +118,18 @@
         align-items: center;
         gap: 0 32px;
         margin-bottom: 64px;
+        cursor: pointer;
+
         .fb-social {
           cursor: pointer;
           font-size: 32px;
           &::before {
             color: #fdd116;
+          }
+          &:hover {
+            &::before {
+              color: #fff;
+            }
           }
         }
         .ins-social {
@@ -130,6 +137,11 @@
           font-size: 32px;
           &::before {
             color: #fdd116;
+          }
+          &:hover {
+            &::before {
+              color: #fff;
+            }
           }
         }
       }

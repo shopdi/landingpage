@@ -68,6 +68,10 @@ button {
   margin: 0 auto;
 }
 
+.feature .feature-list-item.slick-slide:not(.slick-center) {
+  transition: all 0.5s;
+}
+
 @media only screen and (max-width: 1500px) {
   .wrapper {
     margin: 24px 70px 0px 71px;
@@ -93,17 +97,19 @@ button {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header-image-logo {
-  width: 672px;
   max-width: 672px;
   cursor: pointer;
+  min-width: 320px;
 }
 .header-menu {
   flex-grow: 1;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  max-width: 800px;
 }
 .header-menu-item {
   color: #fffceb;
@@ -202,7 +208,7 @@ button {
   width: 100%;
 }
 
-section h2 {
+section h2, .business-description {
   text-align: center;
 }
 
@@ -353,25 +359,16 @@ section h2 {
   color: #fdd116;
 }
 
-@media only screen and (max-width: 992px) {
-  .aboutus-name {
-    font-size: 32px !important;
-  }
-  .aboutus-brand {
-    grid-template-columns: none !important;
-  }
-  .aboutus-brand-item {
-    gap: 0 !important;
-    padding: 0 !important;
-  }
-  .aboutus-brand-item-title {
-    margin-top: 32px;
-    margin-bottom: 9px;
-  }
-}
 .aboutus {
   margin-bottom: 128px;
   margin-top: 40px;
+}
+.aboutus .wrap-core-value {
+  width: 200px;
+  margin: 0 auto;
+}
+.aboutus .wrap-core-value p {
+  text-align: left;
 }
 .aboutus-name {
   font-style: normal;
@@ -424,64 +421,34 @@ section h2 {
   font-size: 20px;
   line-height: 145%;
   color: #f4f6f8;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
+  margin-top: 32px;
 }
 .aboutus-brand-item-description {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 145%;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.2px;
   color: #dfe5ea;
   margin-top: 8px;
 }
 
 @media only screen and (max-width: 992px) {
-  .business {
-    margin-bottom: 64px !important;
+  .aboutus-name {
+    font-size: 32px;
   }
-  .business-name {
-    font-size: 32px !important;
+  .aboutus-brand {
+    grid-template-columns: none;
   }
-  .business-description {
-    font-size: 16px !important;
-    text-align: center !important;
-    font-style: normal !important;
+  .aboutus-brand-item {
+    padding: 0;
+    margin-bottom: 32px;
   }
-  .business-list {
-    gap: 32px 0 !important;
-  }
-  .business-list-item-odd {
-    display: grid;
-    grid-template-columns: none !important;
-    grid-gap: 32px 0;
-  }
-  .business-list-item-odd-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 !important;
-    order: 2 !important;
-  }
-  .business-list-item-odd-right {
-    order: 1 !important;
-  }
-  .business-list-item-odd-right-title {
-    font-size: 24px !important;
-  }
-  .business-list-item-even {
-    display: grid;
-    grid-gap: 32px 0;
-    grid-template-columns: none !important;
-  }
-  .business-list-item-even-left {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-  .business-list-item-even-right-title {
-    font-size: 24px !important;
+  .aboutus-brand-item-title {
+    margin-top: 24px;
+    margin-bottom: 9px;
   }
 }
 .business-name {
@@ -498,7 +465,6 @@ section h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 145%;
-  text-align: left;
   letter-spacing: -1px;
   color: #f4f6f8;
   margin-bottom: 64px;
@@ -577,6 +543,54 @@ section h2 {
   text-align: justify;
 }
 
+@media only screen and (max-width: 992px) {
+  .business {
+    margin-bottom: 64px !important;
+  }
+  .business-name {
+    font-size: 32px !important;
+  }
+  .business-description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+  }
+  .business-list {
+    gap: 32px 0 !important;
+  }
+  .business-list-item-odd {
+    display: grid;
+    grid-template-columns: none !important;
+    grid-gap: 16px 0;
+  }
+  .business-list-item-odd-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    order: 2 !important;
+  }
+  .business-list-item-odd-right {
+    order: 1 !important;
+  }
+  .business-list-item-odd-right-title {
+    font-size: 24px !important;
+  }
+  .business-list-item-even {
+    display: grid;
+    grid-gap: 16px 0;
+    grid-template-columns: none !important;
+  }
+  .business-list-item-even-left {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .business-list-item-even-right-title {
+    font-size: 24px !important;
+  }
+}
 @media only screen and (min-width: 992px) {
   .feature .feature-list-item-image img {
     max-width: 181px !important;
@@ -745,20 +759,15 @@ section h2 {
 
 @media only screen and (max-width: 992px) {
   .feature-name {
-    position: relative !important;
-    margin-bottom: 32px !important;
-    font-size: 32px !important;
+    position: relative;
+    margin-bottom: 64px;
+    font-size: 32px;
   }
   .feature .feature-list {
     padding-bottom: 64px;
   }
-  .feature .feature-list .slick-prev {
-    right: inherit;
-    left: 10px;
-  }
-  .feature .feature-list .slick-next {
-    right: inherit;
-    left: 64px;
+  .feature .slick-dots {
+    top: -55px;
   }
   .feature .feature-list-item-image {
     justify-content: center !important;
@@ -843,7 +852,7 @@ section h2 {
 }
 .token-list-item-line {
   width: 5px;
-  height: 72px;
+  height: 100%;
   margin-top: 1px;
   background: #eed26b;
   border-radius: 10px 0px 0px 10px;
@@ -887,10 +896,7 @@ section h2 {
   font-size: 12px;
   line-height: 145%;
   color: #f4f6f8;
-  text-overflow: ellipsis;
   width: 400px;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .token-list-item-content-left-title {
   display: flex;
@@ -996,7 +1002,7 @@ section h2 {
   z-index: 100;
   position: absolute;
   top: -7px;
-  right: -6px;
+  right: -7px;
   border-radius: 50%;
 }
 
@@ -1110,7 +1116,7 @@ li.active-li .circle-shadow {
 
 .timeline ol li:nth-child(even) .content {
   position: absolute;
-  left: calc(100% + 4.5px);
+  left: calc(100% + 3.5px);
   width: 280px;
   padding: 0px 15px 15px 17px;
   font-size: 1rem;
@@ -1280,6 +1286,7 @@ li.active-li .circle-shadow {
   align-items: center;
   gap: 0 32px;
   margin-bottom: 64px;
+  cursor: pointer;
 }
 .team-description-list-item-social .fb-social {
   cursor: pointer;
@@ -1288,12 +1295,18 @@ li.active-li .circle-shadow {
 .team-description-list-item-social .fb-social::before {
   color: #fdd116;
 }
+.team-description-list-item-social .fb-social:hover::before {
+  color: #fff;
+}
 .team-description-list-item-social .ins-social {
   cursor: pointer;
   font-size: 32px;
 }
 .team-description-list-item-social .ins-social::before {
   color: #fdd116;
+}
+.team-description-list-item-social .ins-social:hover::before {
+  color: #fff;
 }
 .team-gallery {
   padding: 32px 0px;
@@ -1471,7 +1484,7 @@ li.active-li .circle-shadow {
   border-bottom: 1px solid #92a6b9;
 }
 .footer a {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .footer-grid {
   margin-top: 26px;
@@ -1520,7 +1533,7 @@ li.active-li .circle-shadow {
   font-size: 14px;
   line-height: 20px;
   color: #f4f6f8;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .footer-grid-column-text {
   font-style: normal;
@@ -1801,6 +1814,10 @@ canvas {
   }
 }
 @media only screen and (max-width: 992px) {
+  .main-section {
+    display: block;
+  }
+
   .wrapper-view {
     width: 100%;
     padding-bottom: 10vh;
@@ -1811,7 +1828,7 @@ canvas {
   }
 
   .image-view {
-    margin-top: 10vh;
+    margin-top: 0;
     bottom: 0;
     top: auto;
     transform: none;
