@@ -9,7 +9,20 @@
   display: none;
 }
 nav {
-  margin-top: 24px;
+  padding-top: 16px;
+  transition: all 0.5s;
+  width: 100%;
+  z-index: 2;
+  top: -65px;
+}
+.fixed-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #2F3D4A;
+  .box-menu{
+  background: #2F3D4A;
+  }
 }
 .wrapper-view {
   min-height: 70vh;

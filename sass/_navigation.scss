@@ -1,10 +1,7 @@
 .nav-active{
   overflow: hidden;
 }
-nav{
-  position: relative;
 
-}
 .box-menu{
   position: fixed;
   top: 0;
@@ -12,7 +9,6 @@ nav{
   width: 100%;
   z-index: 2;
   .header_mobile{
-    margin: 0 16px;
     width: calc(100% - 32px);
     position: relative;
   }

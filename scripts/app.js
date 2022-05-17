@@ -77,14 +77,25 @@ function scrollActive() {
     const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 120,
       sectionId = current.getAttribute("id");
-    console.log(current.offsetTop);
+    if(scrollY > 65) {
+      $("nav").addClass("fixed-menu");
+    } else {
+      $("nav").removeClass("fixed-menu");
+    }
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
         .querySelector(".mb-navigation-list-menu a[href*=" + sectionId + "]")
         .classList.add("active");
+        document
+        .querySelector(".header-menu-item a[href*=" + sectionId + "].header-menu-text")
+        .classList.add("active");
+        
     } else {
       document
         .querySelector(".mb-navigation-list-menu a[href*=" + sectionId + "]")
+        .classList.remove("active");
+      document
+        .querySelector(".header-menu-item a[href*=" + sectionId + "].header-menu-text")
         .classList.remove("active");
     }
   });
