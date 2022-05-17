@@ -1,3 +1,12 @@
+
+document.querySelector('.timeline-scroll').addEventListener('wheel', preventScroll, {passive: false});
+
+function preventScroll(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    return false;
+}
 $(".team-gallery").slick({
   dots: false,
   slidesToShow: 1,

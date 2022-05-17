@@ -137,7 +137,7 @@ button {
   flex-grow: 1;
   list-style-type: none;
   display: flex;
-  gap: 0 32px;
+  justify-content: space-between;
 }
 .header-menu-item {
   color: #fffceb;
@@ -993,7 +993,9 @@ button {
 
 .timeline-scroll {
   white-space: nowrap;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: pointer;
 }
 .timeline-scroll::-webkit-scrollbar {
   display: none;

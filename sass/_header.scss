@@ -56,7 +56,7 @@
     flex-grow: 1;
     list-style-type: none;
     display: flex;
-    gap: 0 32px;
+    justify-content: space-between;
     &-item {
       color: #fffceb;
       font-style: normal;
