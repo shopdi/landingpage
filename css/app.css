@@ -81,6 +81,10 @@ button {
   .container {
     margin: 0 16px 0 16px;
   }
+
+  nav.container {
+    margin: 0;
+  }
 }
 .header_mobile {
   display: none;
@@ -196,6 +200,10 @@ button {
 }
 .image-view img {
   width: 100%;
+}
+
+section h2 {
+  text-align: center;
 }
 
 @media only screen and (max-width: 992px) {
@@ -481,7 +489,6 @@ button {
   font-weight: 600;
   font-size: max(2.5em, 40px);
   line-height: 145%;
-  text-align: left;
   letter-spacing: -1px;
   color: #fdd116;
   margin-bottom: 32px;
@@ -717,7 +724,6 @@ button {
 @media only screen and (max-width: 992px) {
   .feature-name {
     position: relative !important;
-    text-align: left !important;
     margin-bottom: 32px !important;
     font-size: 32px !important;
   }
@@ -903,7 +909,6 @@ button {
   font-weight: 600;
   font-size: max(2.5em, 40px);
   line-height: 145%;
-  text-align: left;
   letter-spacing: -1px;
   color: #fdd116;
   margin-bottom: 64px;
@@ -1190,7 +1195,6 @@ li.active-li .circle-shadow {
   font-weight: 600;
   font-size: max(2.5em, 40px);
   line-height: 145%;
-  text-align: left;
   letter-spacing: -1px;
   color: #fdd116;
   margin-bottom: 64px;
@@ -1547,7 +1551,7 @@ li.active-li .circle-shadow {
   z-index: 2;
 }
 .box-menu .header_mobile {
-  width: calc(100% - 32px);
+  width: calc(100vw - 32px);
   position: relative;
 }
 .box-menu .mb-navigation-list-menu-item-text {

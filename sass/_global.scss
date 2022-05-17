@@ -30,6 +30,9 @@ button {
   .container {
     margin: 0 16px 0 16px;
   }
+  nav.container {
+    margin:0;
+  }
 }
 
 @media only screen and (min-width: $mobile) {
