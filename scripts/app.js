@@ -1,11 +1,9 @@
-
-
-function preventScroll(e){
-    e.preventDefault();
-    e.stopPropagation();
-
-    return false;
+function preventScroll(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  return false;
 }
+
 $(".team-gallery").slick({
   dots: false,
   slidesToShow: 1,
@@ -26,6 +24,19 @@ $(".team-gallery").slick({
   ],
 });
 
+$(".feature-list").slick({
+  dots: true,
+  slidesToShow: 1,
+  infinite: true,
+  centerMode: true,
+  variableWidth: true,
+  arrows: false,
+  initialSlide: 1,
+  arrows: true,
+  prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-arrow-left"></span></button>`,
+  nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-arrow-right"></span></button>`,
+});
+
 $(".team-description-list").slick({
   dots: true,
   slidesToShow: 1,
@@ -35,7 +46,7 @@ $(".team-description-list").slick({
   focusOnSelect: true,
   asNavFor: ".team-gallery",
   prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-chevron-left"></span></button>`,
-  nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-chevron-right"></button>`,
+  nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-chevron-right"></span></button>`,
 });
 $(document).ready(function () {
   $(".mb-navigation-list-menu-item-text").on("click", () => {
@@ -45,7 +56,6 @@ $(document).ready(function () {
   scrollHorizontal(".partners-brand-item");
   countdown();
 });
-
 
 const app = (() => {
   let body;
@@ -77,7 +87,7 @@ function scrollActive() {
     const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 120,
       sectionId = current.getAttribute("id");
-    if(scrollY > 65) {
+    if (scrollY > 65) {
       $("nav").addClass("fixed-menu");
     } else {
       $("nav").removeClass("fixed-menu");
@@ -86,16 +96,19 @@ function scrollActive() {
       document
         .querySelector(".mb-navigation-list-menu a[href*=" + sectionId + "]")
         .classList.add("active");
-        document
-        .querySelector(".header-menu-item a[href*=" + sectionId + "].header-menu-text")
+      document
+        .querySelector(
+          ".header-menu-item a[href*=" + sectionId + "].header-menu-text"
+        )
         .classList.add("active");
-        
     } else {
       document
         .querySelector(".mb-navigation-list-menu a[href*=" + sectionId + "]")
         .classList.remove("active");
       document
-        .querySelector(".header-menu-item a[href*=" + sectionId + "].header-menu-text")
+        .querySelector(
+          ".header-menu-item a[href*=" + sectionId + "].header-menu-text"
+        )
         .classList.remove("active");
     }
   });
@@ -134,31 +147,6 @@ function countdown() {
     // If the count down is finished, write some text
   }, 1000);
 }
-
-const swiper = new Swiper(".feature-list", {
-  grabCursor: false,
-  slidesPerView: 1,
-  nextButton: ".nav-pre",
-  prevButton: ".nav-next",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".nav-next",
-    prevEl: ".nav-pre",
-  },
-  breakpoints: {
-    800: {
-      width: 357,
-      spaceBetween: 32,
-    },
-    400: {
-      slidesPerView: 1,
-      spaceBetween: 32,
-    },
-  },
-});
 
 var canvas = document.createElement("canvas");
 var width = (canvas.width = window.innerWidth * 0.75);
