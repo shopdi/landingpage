@@ -82,7 +82,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
-            line-height: 140%;
+            line-height: 145%;
             color: #f4f6f8;
             text-align: right;
           }
@@ -90,7 +90,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
-            line-height: 140%;
+            line-height: 145%;
             color: #92a6b9;
           }
         }
@@ -102,7 +102,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
-            line-height: 140%;
+            line-height: 145%;
             color: #f4f6f8;
             text-overflow: ellipsis;
             width: 400px;
@@ -119,14 +119,14 @@
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
-              line-height: 130%;
+              line-height: 145%;
               color: #fee681;
             }
             &-name {
               font-style: normal;
               font-weight: 600;
               font-size: 12px;
-              line-height: 140%;
+              line-height: 145%;
               color: #fdd116;
             }
           }
@@ -143,8 +143,8 @@
     &-title {
       font-style: normal;
       font-weight: 600;
-      font-size: 40px;
-      line-height: 130%;
+      font-size: max(2.5em, 40px);
+      line-height: 145%;
       text-align: left;
       letter-spacing: -1px;
       color: #fdd116;
@@ -154,7 +154,7 @@
       font-style: normal;
       font-weight: 600;
       font-size: 30px;
-      line-height: 130%;
+      line-height: 145%;
       letter-spacing: -0.5px;
       color: #fdd116;
     }
@@ -162,7 +162,7 @@
       font-style: normal;
       font-weight: 600;
       font-size: 28px;
-      line-height: 130%;
+      line-height: 145%;
       letter-spacing: -1px;
       color: #f4f6f8;
       margin-bottom: 35.15px;

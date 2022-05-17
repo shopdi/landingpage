@@ -27,7 +27,7 @@
           font-style: normal;
           font-weight: 600;
           font-size: 18px !important;
-          line-height: 130%;
+          line-height: 145%;
           letter-spacing: -0.5px;
           color: #dfe5ea;
           padding: 0 42px 0 38px !important;
@@ -43,8 +43,8 @@
   &-title {
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 130%;
+    font-size: max(2.5em, 40px);
+    line-height: 145%;
     text-align: left;
     letter-spacing: -1px;
     color: #fdd116;
@@ -56,7 +56,7 @@
         &::before {
           color: #fdd116;
         }
-        font-size: 40px;
+        font-size: max(2.5em, 40px);
       }
       background-color: transparent;
       position: absolute;
@@ -71,7 +71,7 @@
         &::before {
           color: #fdd116;
         }
-        font-size: 40px;
+        font-size: max(2.5em, 40px);
       }
       background-color: transparent;
       position: absolute;
@@ -106,7 +106,7 @@
         font-style: normal;
         font-weight: 600;
         font-size: 30px;
-        line-height: 130%;
+        line-height: 145%;
         letter-spacing: -0.5px;
         color: #dfe5ea;
         padding: 0 298.75px 0 288.25px;
@@ -171,7 +171,7 @@
           font-style: normal;
           font-weight: 600;
           font-size: 22px;
-          line-height: 130%;
+          line-height: 145%;
           letter-spacing: -1px;
           color: #fdd116;
           margin-top: 16px;
@@ -180,7 +180,7 @@
           font-style: normal;
           font-weight: 600;
           font-size: 30px;
-          line-height: 130%;
+          line-height: 145%;
           letter-spacing: -0.5px;
           margin-top: 8px;
           margin-bottom: 16px;

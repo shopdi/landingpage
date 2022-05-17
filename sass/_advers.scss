@@ -44,9 +44,9 @@
   }
   &-text {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 28px;
-    line-height: 130%;
+    line-height: 145%;
     letter-spacing: -1px;
     color: #f4f6f8;
     text-align: justify;
@@ -56,6 +56,8 @@
     margin-top: 32px;
     display: flex;
     gap: 0 16px;
+    flex-wrap: wrap;
+    justify-content: space-around;
     &-item {
       padding: 0 8px;
       display: flex;
@@ -64,8 +66,8 @@
       &-time {
         font-style: normal;
         font-weight: 600;
-        font-size: 40px;
-        line-height: 130%;
+        font-size: max(2.5em, 40px);
+        line-height: 145%;
         letter-spacing: -1px;
         color: #f4f6f8;
       }
@@ -73,7 +75,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 140%;
+        line-height: 145%;
         letter-spacing: 0.2px;
         color: #f4f6f8;
       }
@@ -102,7 +104,7 @@
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
-        line-height: 140%;
+        line-height: 145%;
         text-align: center;
         text-transform: capitalize;
         color: #0d1115;
@@ -130,7 +132,7 @@
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
-        line-height: 140%;
+        line-height: 145%;
         text-align: center;
         text-transform: capitalize;
         color: #fdd116;

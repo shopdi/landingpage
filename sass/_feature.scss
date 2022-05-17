@@ -20,7 +20,7 @@
       font-style: normal;
       font-weight: 600;
       font-size: 30px;
-      line-height: 130%;
+      line-height: 145%;
       letter-spacing: -0.5px;
       color: #f4f6f8;
       margin-bottom: 8px;
@@ -29,7 +29,7 @@
       font-style: normal;
       font-weight: 600;
       font-size: 28px;
-      line-height: 130%;
+      line-height: 145%;
       color: #92a6b9;
       display: block;
       display: -webkit-box;
@@ -99,7 +99,7 @@
       font-style: normal;
       font-weight: 600;
       font-size: 30px;
-      line-height: 130%;
+      line-height: 145%;
       letter-spacing: -0.5px;
       color: #f4f6f8;
       margin-bottom: 8px;
@@ -112,7 +112,7 @@
       font-style: normal;
       font-weight: 600;
       font-size: 28px;
-      line-height: 130%;
+      line-height: 145%;
       color: #92a6b9;
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -132,8 +132,8 @@
   &-name {
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 130%;
+    font-size: max(2.5em, 40px);
+    line-height: 145%;
     text-align: center;
     letter-spacing: -1px;
     color: #fdd116;
@@ -163,7 +163,7 @@
     //     font-style: normal;
     //     font-weight: 600;
     //     font-size: 30px;
-    //     line-height: 130%;
+    //     line-height: 145%;
     //     letter-spacing: -0.5px;
     //     color: #f4f6f8;
     //     margin-bottom: 8px;
@@ -172,7 +172,7 @@
     //     font-style: normal;
     //     font-weight: 600;
     //     font-size: 28px;
-    //     line-height: 130%;
+    //     line-height: 145%;
     //     text-align: justify;
     //     color: #92a6b9;
     //     overflow: hidden;

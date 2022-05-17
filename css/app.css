@@ -51,7 +51,7 @@ img {
 
 body {
   line-height: 1;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Comfortaa", cursive;
   background-color: #2f3d4a;
 }
 
@@ -59,7 +59,7 @@ button {
   cursor: pointer;
   outline: none;
   border: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Comfortaa", cursive;
 }
 
 .wrapper {
@@ -67,18 +67,18 @@ button {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1500px) {
+  .wrapper {
+    margin: 24px 70px 0px 71px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .wrapper {
-    margin: 0 !important;
+    margin: 0;
   }
 
   .container {
     margin: 0 16px 0 16px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .container {
-    margin: 24px 70px 0px 71px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -117,7 +117,7 @@ button {
     text-align: center;
     font-style: normal;
     margin: 0 5px;
-    line-height: 140%;
+    line-height: 145%;
   }
 }
 .header_mobile {
@@ -185,24 +185,24 @@ button {
   text-align: center;
   font-style: normal;
   margin: 0 5px;
-  line-height: 140%;
+  line-height: 145%;
 }
 
 .title-text {
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: max(2.5em, 40px);
+  line-height: 145%;
   letter-spacing: -1px;
   color: #f4f6f8;
 }
 
 .image-view {
   position: absolute;
-  width: 47%;
-  right: 0;
-  bottom: 50%;
-  transform: translateY(50%);
+  width: 55%;
+  left: 45%;
+  top: 19vh;
+  max-width: 800px;
 }
 .image-view img {
   width: 100%;
@@ -260,9 +260,9 @@ button {
 }
 .advers-text {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 28px;
-  line-height: 130%;
+  line-height: 145%;
   letter-spacing: -1px;
   color: #f4f6f8;
   text-align: justify;
@@ -271,6 +271,8 @@ button {
   margin-top: 32px;
   display: flex;
   gap: 0 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .advers-countdown-item {
   padding: 0 8px;
@@ -281,8 +283,8 @@ button {
 .advers-countdown-item-time {
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: max(2.5em, 40px);
+  line-height: 145%;
   letter-spacing: -1px;
   color: #f4f6f8;
 }
@@ -290,7 +292,7 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 145%;
   letter-spacing: 0.2px;
   color: #f4f6f8;
 }
@@ -319,7 +321,7 @@ button {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 145%;
   text-align: center;
   text-transform: capitalize;
   color: #0d1115;
@@ -347,7 +349,7 @@ button {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 145%;
   text-align: center;
   text-transform: capitalize;
   color: #fdd116;
@@ -376,8 +378,8 @@ button {
 .aboutus-name {
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: max(2.5em, 40px);
+  line-height: 145%;
   text-align: center;
   letter-spacing: -1px;
   color: #fdd116;
@@ -395,9 +397,9 @@ button {
 }
 .aboutus-description {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
-  line-height: 130%;
+  line-height: 145%;
   text-align: justify;
   color: #b1c0cd;
   margin-bottom: 32px;
@@ -421,16 +423,16 @@ button {
 }
 .aboutus-brand-item-title {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
-  line-height: 130%;
+  line-height: 145%;
   color: #f4f6f8;
 }
 .aboutus-brand-item-description {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 145%;
   text-align: left;
   letter-spacing: 0.2px;
   color: #dfe5ea;
@@ -487,8 +489,8 @@ button {
 .business-name {
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: max(2.5em, 40px);
+  line-height: 145%;
   text-align: left;
   letter-spacing: -1px;
   color: #fdd116;
@@ -498,7 +500,7 @@ button {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 130%;
+  line-height: 145%;
   text-align: left;
   letter-spacing: -1px;
   color: #f4f6f8;
@@ -533,9 +535,9 @@ button {
 }
 .business-list-item-odd-right-description {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
-  line-height: 130%;
+  line-height: 145%;
   text-align: left;
   color: #dfe5ea;
   margin-bottom: 8px;
@@ -569,9 +571,9 @@ button {
 }
 .business-list-item-even-right-description {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
-  line-height: 130%;
+  line-height: 145%;
   text-align: left;
   color: #dfe5ea;
   margin-bottom: 8px;
@@ -604,7 +606,7 @@ button {
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
-  line-height: 130%;
+  line-height: 145%;
   letter-spacing: -0.5px;
   color: #f4f6f8;
   margin-bottom: 8px;
@@ -613,7 +615,7 @@ button {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 130%;
+  line-height: 145%;
   color: #92a6b9;
   display: block;
   display: -webkit-box;
@@ -679,7 +681,7 @@ button {
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
-  line-height: 130%;
+  line-height: 145%;
   letter-spacing: -0.5px;
   color: #f4f6f8;
   margin-bottom: 8px;
@@ -692,7 +694,7 @@ button {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 130%;
+  line-height: 145%;
   color: #92a6b9;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -706,8 +708,8 @@ button {
 .feature-name {
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: max(2.5em, 40px);
+  line-height: 145%;
   text-align: center;
   letter-spacing: -1px;
   color: #fdd116;
@@ -853,7 +855,7 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 140%;
+  line-height: 145%;
   color: #f4f6f8;
   text-align: right;
 }
@@ -861,7 +863,7 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 140%;
+  line-height: 145%;
   color: #92a6b9;
 }
 .token-list-item-content-left {
@@ -873,7 +875,7 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 140%;
+  line-height: 145%;
   color: #f4f6f8;
   text-overflow: ellipsis;
   width: 400px;
@@ -891,14 +893,14 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 130%;
+  line-height: 145%;
   color: #fee681;
 }
 .token-list-item-content-left-title-name {
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: 140%;
+  line-height: 145%;
   color: #fdd116;
 }
 .token-chart img {
@@ -909,8 +911,8 @@ button {
 .token-chart-title {
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: max(2.5em, 40px);
+  line-height: 145%;
   text-align: left;
   letter-spacing: -1px;
   color: #fdd116;
@@ -920,7 +922,7 @@ button {
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
-  line-height: 130%;
+  line-height: 145%;
   letter-spacing: -0.5px;
   color: #fdd116;
 }
@@ -928,7 +930,7 @@ button {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 130%;
+  line-height: 145%;
   letter-spacing: -1px;
   color: #f4f6f8;
   margin-bottom: 35.15px;
@@ -942,8 +944,8 @@ button {
 .timeline-title {
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: max(2.5em, 40px);
+  line-height: 145%;
   letter-spacing: -1px;
   color: #fdd116;
   margin-bottom: 64px;
@@ -1032,7 +1034,7 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 145%;
   letter-spacing: 0.2px;
   color: #f4f6f8;
 }
@@ -1048,7 +1050,7 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 145%;
   letter-spacing: 0.2px;
   color: #f4f6f8;
 }
@@ -1067,16 +1069,16 @@ button {
 .timeline ol li:nth-child(odd) .content-title {
   padding-top: 110px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
-  line-height: 130%;
+  line-height: 145%;
   color: #fdd116;
 }
 .timeline ol li:nth-child(odd) .content-text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 145%;
   letter-spacing: 0.2px;
   color: #f4f6f8;
 }
@@ -1108,9 +1110,9 @@ li.active-li .circle-shadow {
 }
 .timeline ol li:nth-child(even) .content-title {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
-  line-height: 130%;
+  line-height: 145%;
   color: #fdd116;
   margin-bottom: 3px;
 }
@@ -1118,7 +1120,7 @@ li.active-li .circle-shadow {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 145%;
   letter-spacing: 0.2px;
   color: #f4f6f8;
   margin-bottom: 50px;
@@ -1182,7 +1184,7 @@ li.active-li .circle-shadow {
     font-style: normal;
     font-weight: 600;
     font-size: 18px !important;
-    line-height: 130%;
+    line-height: 145%;
     letter-spacing: -0.5px;
     color: #dfe5ea;
     padding: 0 42px 0 38px !important;
@@ -1194,8 +1196,8 @@ li.active-li .circle-shadow {
 .team-title {
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: max(2.5em, 40px);
+  line-height: 145%;
   text-align: left;
   letter-spacing: -1px;
   color: #fdd116;
@@ -1211,7 +1213,7 @@ li.active-li .circle-shadow {
   z-index: 999;
 }
 .team-description-list .slick-prev span {
-  font-size: 40px;
+  font-size: max(2.5em, 40px);
 }
 .team-description-list .slick-prev span::before {
   color: #fdd116;
@@ -1226,7 +1228,7 @@ li.active-li .circle-shadow {
   z-index: 999;
 }
 .team-description-list .slick-next span {
-  font-size: 40px;
+  font-size: max(2.5em, 40px);
 }
 .team-description-list .slick-next span::before {
   color: #fdd116;
@@ -1255,7 +1257,7 @@ li.active-li .circle-shadow {
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
-  line-height: 130%;
+  line-height: 145%;
   letter-spacing: -0.5px;
   color: #dfe5ea;
   padding: 0 298.75px 0 288.25px;
@@ -1322,7 +1324,7 @@ li.active-li .circle-shadow {
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
-  line-height: 130%;
+  line-height: 145%;
   letter-spacing: -1px;
   color: #fdd116;
   margin-top: 16px;
@@ -1331,7 +1333,7 @@ li.active-li .circle-shadow {
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
-  line-height: 130%;
+  line-height: 145%;
   letter-spacing: -0.5px;
   margin-top: 8px;
   margin-bottom: 16px;
@@ -1372,8 +1374,8 @@ li.active-li .circle-shadow {
   margin-top: 128px;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: max(2.5em, 40px);
+  line-height: 145%;
   letter-spacing: -1px;
   color: #fdd116;
   margin-bottom: 64px;
@@ -1687,7 +1689,7 @@ nav {
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
-    line-height: 130%;
+    line-height: 145%;
     letter-spacing: -1px;
     color: #f4f6f8;
   }
@@ -1719,6 +1721,10 @@ nav {
   position: relative;
 }
 
+.title-mobile {
+  display: none;
+}
+
 nav {
   margin-top: 24px;
 }
@@ -1727,13 +1733,13 @@ nav {
   min-height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding-bottom: 30vh;
-  width: 50%;
+  padding-bottom: calc(13vh - 65px);
+  width: 40%;
 }
 
 .title-text {
   white-space: nowrap;
+  margin-bottom: 32px;
 }
 
 .first-view {
@@ -1743,7 +1749,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100vw - 17px);
+  width: 100vw;
   height: 100vh;
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
@@ -1756,7 +1762,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100vw - 17px);
+  width: 100vw;
   height: 100vh;
   z-index: -1;
   background: linear-gradient(179.54deg, rgba(48, 61, 74, 0.3) -110.88%, rgba(48, 61, 74, 0) 110.14%);
@@ -1787,9 +1793,11 @@ canvas {
   .image-view {
     margin-top: 10vh;
     bottom: 0;
+    top: auto;
     transform: none;
     width: 100%;
     position: relative;
+    left: auto;
   }
   .image-view img {
     width: 90%;
@@ -1801,17 +1809,27 @@ canvas {
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
-    line-height: 130%;
+    line-height: 145%;
     letter-spacing: -1px;
     margin-bottom: 32px;
     white-space: normal;
+    flex-direction: column;
+    display: none;
+  }
+  .title-text span {
+    display: inline-block;
+  }
+
+  .title-mobile {
+    display: flex;
+    text-align: center;
   }
 
   .advers-text {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 16px;
-    line-height: 130%;
+    line-height: 145%;
     text-align: center;
     letter-spacing: -1px;
   }

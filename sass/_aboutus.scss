@@ -23,8 +23,8 @@
   &-name {
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 130%;
+    font-size: max(2.5em, 40px);
+    line-height: 145%;
     text-align: center;
     letter-spacing: -1px;
     color: #fdd116;
@@ -42,9 +42,9 @@
   }
   &-description {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
-    line-height: 130%;
+    line-height: 145%;
     text-align: justify;
     color: #b1c0cd;
     margin-bottom: 32px;
@@ -66,16 +66,16 @@
       }
       &-title {
         font-style: normal;
-        font-weight: 500;
+        font-weight: 300;
         font-size: 20px;
-        line-height: 130%;
+        line-height: 145%;
         color: #f4f6f8;
       }
       &-description {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 140%;
+        line-height: 145%;
         text-align: left;
         letter-spacing: 0.2px;
         color: #dfe5ea;

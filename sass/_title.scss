@@ -4,8 +4,8 @@
   &-text {
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 130%;
+    font-size: max(2.5em, 40px);
+    line-height: 145%;
     letter-spacing: -1px;
     color: #f4f6f8;
   }
@@ -13,10 +13,10 @@
 
 .image-view{
   position: absolute;
-  width: 47%;
-  right: 0;
-  bottom: 50%;
-  transform: translateY(50%);
+  width: 55%;
+  left: 45%;
+  top: 19vh;
+  max-width: 800px;
   img{
     width: 100%;
   }
