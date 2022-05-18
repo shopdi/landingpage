@@ -48,6 +48,15 @@ $(".team-description-list").slick({
   prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-chevron-left"></span></button>`,
   nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-chevron-right"></span></button>`,
 });
+
+function scrollHorizontal(classname) {
+  const scrollBrand = document.querySelector(classname);
+  scrollBrand.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollBrand.scrollLeft += evt.deltaY;
+  });
+}
+
 $(document).ready(function () {
   $(".mb-navigation-list-menu-item-text").on("click", () => {
     $("body").removeClass("nav-active");
