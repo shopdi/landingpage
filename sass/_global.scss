@@ -14,31 +14,29 @@ button {
   max-width: 1440px;
   margin: 0 auto;
 }
-.feature .feature-list-item.slick-slide:not(.slick-center){
-  transition: all 0.5s;
-}
+// .feature .feature-list-item.slick-slide:not(.slick-center){
+//   transition: all 0.5s;
+// }
 
 @media only screen and (max-width: 1500px) {
   .wrapper {
     margin: 24px 70px 0px 71px;
   }
-
 }
 
 @media only screen and (max-width: $mobile) {
   .wrapper {
-    margin: 0 ;
+    margin: 0;
   }
   .container {
     margin: 0 16px 0 16px;
   }
   nav.container {
-    margin:0;
+    margin: 0;
   }
 }
 
 @media only screen and (min-width: $mobile) {
   .container {
-    
   }
 }

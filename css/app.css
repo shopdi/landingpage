@@ -68,10 +68,6 @@ button {
   margin: 0 auto;
 }
 
-.feature .feature-list-item.slick-slide:not(.slick-center) {
-  transition: all 0.5s;
-}
-
 @media only screen and (max-width: 1500px) {
   .wrapper {
     margin: 24px 70px 0px 71px;
@@ -778,7 +774,7 @@ section h2, .business-description {
   }
   .feature .feature-list-item {
     min-height: 500px !important;
-    width: 350px !important;
+    width: 330px !important;
   }
   .feature .feature-list-item-title {
     font-size: 18px !important;
