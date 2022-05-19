@@ -61,8 +61,8 @@ $(document).ready(function () {
   $(".mb-navigation-list-menu-item-text").on("click", () => {
     $("body").removeClass("nav-active");
   });
-  scrollHorizontal(".timeline-scroll");
-  scrollHorizontal(".partners-brand-item");
+  // scrollHorizontal(".timeline-scroll");
+  // scrollHorizontal(".partners-brand-item");
   countdown();
 });
 
