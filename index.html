@@ -7,14 +7,11 @@
     <title>Shopdi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/app.css" />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
   </head>
 
@@ -89,6 +86,18 @@
       </div>
     </nav>
     <div class="wrapper">
+      <div class="whitelist" id="whitelist-blur">
+        <div class="form-whitelist">
+          <h1 class="form-whitelist-heading">Whitelist Form</h1>
+          <form id= "formWhiteListSubmit" class="form-whitelist-form" autocomplete="off">
+            <label for="fullname" class="form-whitelist-label">Full name</label>
+            <input type="text" id="fullname" class="form-whitelist-input" placeholder="ENTER YOUR FULL NAME">
+            <label for="email" class="form-whitelist-label">Email</label>
+            <input type="email" id="email" class="form-whitelist-input" placeholder="ENTER YOUR EMAIL">
+            <button class="form-whitelist-submit" id="btnSubmitWhiteList">Submit</button>
+          </form>
+        </div>
+      </div>
       <div class="bg-blur"></div>
       <div class="first-view"></div>
       <section id="home" class="container main-section">
@@ -127,7 +136,7 @@
             </div>
           </div>
           <div class="advers-button">
-            <button class="advers-button-wishlist">
+            <button id="btnWhiteList" class="advers-button-wishlist">
               <span class="advers-button-wishlist-text">Join Whitelist</span>
             </button>
             <button class="advers-button-readmore">
@@ -1026,8 +1035,8 @@
       type="text/javascript"
       src="./scripts/jquery-migrate-1.2.1.min.js"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ldb9_gfAAAAAObJHYgKp5ifrmL7U4iGIIUCTfGu"></script>
     <script type="text/javascript" src="./scripts/slick.min.js"></script>
-    <script type="text/javascript" src="scripts/swiper-bundle.js"></script>
     <script src="./scripts/app.js"></script>
     <!-- sass ./sass/app.scss ./css/app.css --watch -->
   </body>

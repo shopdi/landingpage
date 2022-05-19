@@ -1940,4 +1940,90 @@ canvas {
   content: "\e901";
 }
 
+.whitelist {
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5411764706);
+  top: 0;
+  display: none;
+}
+.whitelist .form-whitelist {
+  padding: 90px 75px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.whitelist .form-whitelist-heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #373941;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.whitelist .form-whitelist-label {
+  font-size: 16px;
+  color: #63676b;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.whitelist .form-whitelist-input {
+  display: block;
+  width: 100%;
+  padding: 25px;
+  border-radius: 14px;
+  background-color: #f2f3f5;
+  outline: none;
+  border: 0;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.whitelist .form-whitelist-input::-webkit-input-placeholder {
+  color: #b4bac0;
+  font-weight: 500;
+}
+.whitelist .form-whitelist-input::-moz-input-placeholder {
+  color: #b4bac0;
+  font-weight: 500;
+}
+.whitelist .form-whitelist-submit {
+  padding: 25px;
+  color: #0d1115;
+  font-size: 18px;
+  text-align: center;
+  border: 0;
+  outline: none;
+  display: inline-block;
+  width: 100%;
+  border-radius: 14px;
+  background-color: #fdd116;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 5px 10px 0 rgba(253, 209, 22, 0.5);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.whitelist .form-whitelist-already {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+}
+.whitelist .form-whitelist-login-link {
+  color: #2979ff;
+  text-decoration: none;
+}
+
+.whitelist-show {
+  display: block;
+}
+
 /*# sourceMappingURL=app.css.map */

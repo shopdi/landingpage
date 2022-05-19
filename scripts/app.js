@@ -64,29 +64,101 @@ $(document).ready(function () {
   // scrollHorizontal(".timeline-scroll");
   // scrollHorizontal(".partners-brand-item");
   countdown();
+  formEvent();
+  app();
 });
 
-const app = (() => {
+function onSubmit(e) {
+  e.preventDefault();
+  grecaptcha
+    .execute("6Ldb9_gfAAAAAObJHYgKp5ifrmL7U4iGIIUCTfGu", {
+      action: "homepage",
+    })
+    .then(function (token) {
+      // This data is not being used in the back end (Only the token), but have it here for you to experiment
+      const name = document.querySelector("#fullname").value;
+      const email = document.querySelector("#email").value;
+      const captcha = token;
+
+      fetch("https://nodejsv3captcha.herokuapp.com/subscribe", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          captcha: captcha,
+        }),
+      })
+        .then((res) => res.json())
+        .then((result) => {
+          const { success } = result;
+          if (success) {
+            alert("Add whitelist successfully");
+          }
+        });
+    });
+}
+
+function formEvent(e) {
+  document
+    .getElementById("formWhiteListSubmit")
+    .addEventListener("submit", onSubmit);
+}
+
+const app = () => {
   let body;
   let menu;
   let menuItems;
   let nav;
+  let whitelistBlur;
+  let btnWhitelist;
+  let mouseoverFormWhitelist = false;
   const init = () => {
     body = document.querySelector("body");
     menu = document.querySelector(".menu-icon");
     nav = document.querySelector(".nav");
+    containerWhitelist = document.querySelector(".form-whitelist");
+    whitelistBlur = document.getElementById("whitelist-blur");
+    btnWhitelist = document.getElementById("btnWhiteList");
     applyListeners();
   };
   const applyListeners = () => {
     menu.addEventListener("click", () => toggleClass(body, "nav-active"));
+    containerWhitelist.addEventListener("mouseover", () => {
+      mouseoverFormWhitelist = true;
+    });
+    containerWhitelist.addEventListener("mouseout", () => {
+      mouseoverFormWhitelist = false;
+    });
+    whitelistBlur.addEventListener("click", () => {
+      if (!mouseoverFormWhitelist) {
+        closePopupWhitelist(whitelistBlur, "whitelist-show");
+      }
+    });
+    btnWhitelist.addEventListener("click", () => {
+      openPopupWhitelist(whitelistBlur, "whitelist-show");
+    });
   };
   const toggleClass = (element, stringClass) => {
     if (element.classList.contains(stringClass))
       element.classList.remove(stringClass);
     else element.classList.add(stringClass);
   };
+  const closePopupWhitelist = (element, stringClass) => {
+    if (element.classList.contains(stringClass)) {
+      element.classList.remove(stringClass);
+    }
+  };
+  const openPopupWhitelist = (element, stringClass) => {
+    if (!element.classList.contains(stringClass)) {
+      element.classList.add(stringClass);
+    }
+  };
   init();
-})();
+};
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
