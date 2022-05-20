@@ -261,7 +261,7 @@ section h2, .business-description {
 .advers-text {
   font-style: normal;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 145%;
   letter-spacing: -1px;
   color: #f4f6f8;
@@ -271,7 +271,7 @@ section h2, .business-description {
   margin-top: 32px;
   display: flex;
   gap: 0 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
 }
 .advers-countdown-item {
@@ -1740,6 +1740,13 @@ li.active-li .circle-shadow {
   display: none;
 }
 
+nav.fixed-menu {
+  padding-top: 8px;
+}
+nav.fixed-menu .wrapper {
+  margin-top: 0;
+}
+
 nav {
   padding-top: 16px;
   transition: all 0.5s;
@@ -1752,10 +1759,10 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background: #2F3D4A;
+  background: #2f3d4a;
 }
 .fixed-menu .box-menu {
-  background: #2F3D4A;
+  background: #2f3d4a;
 }
 
 .wrapper-view {
@@ -1805,7 +1812,8 @@ canvas {
 }
 
 @-moz-document url-prefix() {
-  .bg-blur, .first-view {
+  .bg-blur,
+.first-view {
     filter: blur(40px);
   }
 }
