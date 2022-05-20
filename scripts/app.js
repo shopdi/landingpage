@@ -70,14 +70,20 @@ $(document).ready(function () {
 
 function onSubmit(e) {
   e.preventDefault();
+
+  const name = document.querySelector("#fullname").value;
+  const email = document.querySelector("#email").value;
+
+  if (!name || !email) {
+    notification("Please enter data full form", "Warning");
+    return;
+  }
+
   grecaptcha
     .execute("6Ldb9_gfAAAAAObJHYgKp5ifrmL7U4iGIIUCTfGu", {
       action: "homepage",
     })
     .then(function (token) {
-      // This data is not being used in the back end (Only the token), but have it here for you to experiment
-      const name = document.querySelector("#fullname").value;
-      const email = document.querySelector("#email").value;
       const captcha = token;
 
       fetch("https://nodejsv3captcha.herokuapp.com/subscribe", {
@@ -96,10 +102,22 @@ function onSubmit(e) {
         .then((result) => {
           const { success } = result;
           if (success) {
-            alert("Add whitelist successfully");
+            notification("Your whitelist is added");
+            document.querySelector("#fullname").value = "";
+            document.querySelector("#email").value = "";
           }
         });
     });
+}
+
+function notification(text, heading = "Success") {
+  $.toast({
+    heading: heading,
+    text: text,
+    showHideTransition: "slide",
+    icon: heading,
+    position: "bottom-right",
+  });
 }
 
 function formEvent(e) {
