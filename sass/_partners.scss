@@ -1,45 +1,7 @@
-@media only screen and (max-width: $mobile) {
-  .partners {
-    &-title {
-      font-size: 32px !important;
-    }
-    &-brand {
-      &-title {
-        font-size: 24px !important;
-      }
-      &-item {
-        &-logo {
-          width: 100px !important;
-          height: 100px !important;
-          img {
-            max-width: 70px !important;
-            max-height: 60px !important;
-          }
-        }
-      }
-    }
-    &-cryptos {
-      gap: 0 55px !important;
-      &-item {
-        &-title {
-          font-size: 24px !important;
-        }
-        &-content {
-          width: 100px !important;
-          height: 100px !important;
-          img {
-            max-width: 70px !important;
-            max-height: 60px !important;
-          }
-        }
-      }
-    }
-  }
-}
-
 .partners {
+  margin-top: 128px;
+
   &-title {
-    margin-top: 128px;
     font-style: normal;
     font-weight: 600;
     font-size: max(2.5em, 40px);
@@ -48,6 +10,7 @@
     color: #fdd116;
     margin-bottom: 64px;
   }
+
   &-brand {
     &-title {
       font-style: normal;
@@ -58,15 +21,18 @@
       color: #ffffff;
       margin-bottom: 32px;
     }
+
     &-item {
       display: block;
       margin-bottom: 32px;
       white-space: nowrap;
       overflow-x: auto;
       overflow-y: hidden;
+
       &::-webkit-scrollbar {
         display: none;
       }
+
       &-logo {
         width: 250px;
         height: 250px;
@@ -77,6 +43,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
+
         img {
           position: absolute;
           top: 50%;
@@ -88,10 +55,12 @@
       }
     }
   }
+
   &-cryptos {
     display: flex;
     gap: 0 314px;
     margin-bottom: 32px;
+
     &-item {
       &-title {
         font-style: normal;
@@ -102,6 +71,7 @@
         color: #ffffff;
         margin-bottom: 32px;
       }
+
       &-content {
         width: 250px;
         height: 250px;
@@ -110,9 +80,59 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         img {
           max-width: 150px;
           max-height: 110px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .partners {
+    margin-top: 32px;
+
+    &-title {
+
+      font-size: 32px !important;
+    }
+
+    &-brand {
+      &-title {
+        font-size: 24px !important;
+      }
+
+      &-item {
+        &-logo {
+          width: 100px !important;
+          height: 100px !important;
+
+          img {
+            max-width: 70px !important;
+            max-height: 60px !important;
+          }
+        }
+      }
+    }
+
+    &-cryptos {
+      gap: 0 55px !important;
+
+      &-item {
+        &-title {
+          font-size: 24px !important;
+        }
+
+        &-content {
+          width: 100px !important;
+          height: 100px !important;
+
+          img {
+            max-width: 70px !important;
+            max-height: 60px !important;
+          }
         }
       }
     }

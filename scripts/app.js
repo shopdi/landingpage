@@ -4,6 +4,12 @@ function preventScroll(e) {
   return false;
 }
 
+function randomIndex(number) {
+  return Math.floor(Math.random() * number)
+}
+
+const indexTeam = randomIndex(6)
+
 $(".team-gallery").slick({
   dots: false,
   slidesToShow: 1,
@@ -11,8 +17,10 @@ $(".team-gallery").slick({
   centerMode: true,
   variableWidth: true,
   arrows: false,
-  initialSlide: 3,
+  initialSlide: indexTeam,
+  focusOnSelect: true,
   asNavFor: ".team-description-list",
+  adaptiveHeight: true,
   responsive: [
     {
       breakpoint: 900,
@@ -24,17 +32,43 @@ $(".team-gallery").slick({
   ],
 });
 
+
 $(".feature-list").slick({
   dots: true,
-  slidesToShow: 1,
   infinite: true,
-  speed: 0,
   centerMode: true,
+  adaptiveHeight: true,
   variableWidth: true,
-  initialSlide: 1,
+  focusOnSelect: true,
+  initialSlide: randomIndex(3),
   arrows: true,
   prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-arrow-left"></span></button>`,
   nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-arrow-right"></span></button>`,
+});
+
+
+$(".advisor-list").slick({
+  dots: false,
+  infinite: true,
+  slidesToShow: 3,
+  variableWidth: true,
+  centerMode: true,
+  focusOnSelect: true,
+  initialSlide: randomIndex(5),
+  arrows: true,
+  prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-chevron-left"></span></button>`,
+  nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-chevron-right"></span></button>`,
+  responsive: [
+    {
+      breakpoint: 922,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: false,
+        centerMode: false,
+      },
+    },
+  ],
 });
 
 $(".team-description-list").slick({
@@ -42,7 +76,7 @@ $(".team-description-list").slick({
   slidesToShow: 1,
   infinite: false,
   arrows: true,
-  initialSlide: 3,
+  initialSlide: indexTeam,
   focusOnSelect: true,
   asNavFor: ".team-gallery",
   prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-chevron-left"></span></button>`,

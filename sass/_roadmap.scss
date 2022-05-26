@@ -7,30 +7,20 @@
     letter-spacing: -1px;
     color: #fdd116;
     margin-bottom: 64px;
+    text-align: center;
   }
+
   ol {
     padding: 256px 0 320px 0 !important;
   }
 }
 
-@media only screen and (max-width: $mobile) {
-  .timeline {
-    &-title {
-      margin-bottom: 64px !important;
-      font-size: 32px !important;
-    }
-  }
-  .timeline ol li:nth-child(odd) .content {
-    &-title {
-      padding-top: 53px !important;
-    }
-  }
-}
 
 @keyframes width {
   from {
     width: 0%;
   }
+
   to {
     width: 94%;
   }
@@ -40,6 +30,7 @@
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
@@ -62,6 +53,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     cursor: pointer;
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -106,6 +98,9 @@
   line-height: 145%;
   letter-spacing: 0.2px;
   color: #f4f6f8;
+  transform: translateX(-20px);
+  text-align: center;
+
 }
 
 .timeline ol li:nth-child(odd) .main {
@@ -122,6 +117,8 @@
   line-height: 145%;
   letter-spacing: 0.2px;
   color: #f4f6f8;
+  transform: translateX(-20px);
+  text-align: center;
 }
 
 .timeline ol li:nth-child(odd) .content {
@@ -134,6 +131,7 @@
   color: black;
   background-color: transparent;
   border-left: 1px solid #fdd116;
+
   &-title {
     padding-top: 110px;
     font-style: normal;
@@ -142,6 +140,7 @@
     line-height: 145%;
     color: #fdd116;
   }
+
   &-text {
     font-style: normal;
     font-weight: 400;
@@ -176,6 +175,7 @@ li.active-li .circle-shadow {
   color: black;
   background-color: transparent;
   border-left: 1px solid #fdd116;
+
   &-title {
     font-style: normal;
     font-weight: 300;
@@ -184,6 +184,7 @@ li.active-li .circle-shadow {
     color: #fdd116;
     margin-bottom: 3px;
   }
+
   &-text {
     font-style: normal;
     font-weight: 400;
@@ -225,4 +226,19 @@ li.active-li .circle-shadow {
   top: -8px;
   border-width: 8px 0 0 8px;
   border-color: transparent transparent transparent white;
+}
+
+@media only screen and (max-width: $mobile) {
+  .timeline {
+    &-title {
+      margin-bottom: 32px !important;
+      font-size: 32px !important;
+    }
+  }
+
+  .timeline ol li:nth-child(odd) .content {
+    &-title {
+      padding-top: 53px !important;
+    }
+  }
 }

@@ -1,31 +1,39 @@
 @media only screen and (max-width: $mobile) {
   .wrapper-view {
     grid-template-columns: none !important;
+
     &-text {
       font-size: 16px !important;
       text-align: center !important;
     }
+
     &-image {
       img {
         width: 100% !important;
         height: 100% !important;
       }
     }
+
     &-countdown {
       gap: 4px 0px;
       justify-content: space-around;
+
       &-item {
         flex-direction: column;
+
         &-time {
           font-size: 32px !important;
         }
       }
     }
+
     &-button {
       justify-content: space-evenly;
+
       &-wishlist {
         width: 155px !important;
       }
+
       &-readmore {
         width: 155px !important;
       }
@@ -39,29 +47,34 @@
   margin-top: 32px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0 54px;
+
   &-image {
     margin-top: 10px;
   }
+
   &-text {
     font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 145%;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
     letter-spacing: -1px;
     color: #f4f6f8;
-    text-align: justify;
+    text-align: left;
   }
+
   &-countdown {
     margin-top: 32px;
     display: flex;
     gap: 0 16px;
     flex-wrap: nowrap;
     justify-content: space-around;
+
     &-item {
       padding: 0 8px;
       display: flex;
       align-items: center;
       gap: 0 4px;
+
       &-time {
         font-style: normal;
         font-weight: 600;
@@ -70,6 +83,7 @@
         letter-spacing: -1px;
         color: #f4f6f8;
       }
+
       &-type {
         font-style: normal;
         font-weight: 400;
@@ -80,10 +94,12 @@
       }
     }
   }
+
   &-button {
     margin-top: 32px;
     display: flex;
     gap: 0 32px;
+
     &-wishlist {
       display: flex;
       flex-direction: row;
@@ -96,9 +112,11 @@
       background: #fdd116;
       border-radius: 8px;
       transition: all 0.5s;
+
       &:hover {
         opacity: 0.7;
       }
+
       &-text {
         font-style: normal;
         font-weight: 600;
@@ -110,6 +128,7 @@
         display: flex;
       }
     }
+
     &-readmore {
       box-sizing: border-box;
       display: flex;
@@ -124,9 +143,11 @@
       border: 1px solid #fdd116;
       border-radius: 8px;
       transition: all 0.5s;
+
       &:hover {
         opacity: 0.7;
       }
+
       &-text {
         font-style: normal;
         font-weight: 600;

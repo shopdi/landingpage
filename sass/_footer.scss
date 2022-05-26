@@ -14,50 +14,62 @@
   margin-top: 114.79px;
   border-top: 1px solid #92a6b9;
   border-bottom: 1px solid #92a6b9;
+
   a {
     margin-bottom: 6px;
   }
+
   &-grid {
     margin-top: 26px;
     margin-bottom: 91px;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-gap: 0px 177.33px;
+
     &-column {
       &-social {
         span:hover {
           &::before {
             color: #fdd116;
           }
+
           font-size: 22px;
         }
+
         span {
           font-size: 22px;
         }
+
         display: flex;
         margin-bottom: 28px;
         cursor: pointer;
         justify-content: space-between;
         max-width: 235px;
       }
+
       &-title-down {
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 20px;
         color: #f4f6f8;
+        white-space: nowrap;
       }
+
       &-appstore {
         margin-top: 8px;
         margin-bottom: 6px;
         cursor: pointer;
       }
+
       &-googlestore {
         cursor: pointer;
       }
+
       &-logo {
         margin-bottom: 8px;
       }
+
       &-texttitle {
         font-style: normal;
         font-weight: 600;
@@ -66,6 +78,7 @@
         color: #f4f6f8;
         margin-bottom: 8px;
       }
+
       &-text {
         font-style: normal;
         font-weight: 400;
@@ -73,9 +86,11 @@
         line-height: 20px;
         color: #f4f6f8;
       }
+
       &-policys {
         display: flex;
         flex-direction: column;
+
         &-text {
           font-style: normal;
           font-weight: 400;

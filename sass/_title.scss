@@ -1,33 +1,35 @@
-
-
 .title {
   &-text {
     font-style: normal;
     font-weight: 600;
     font-size: max(2.5em, 40px);
-    line-height: 145%;
+    line-height: 130%;
     letter-spacing: -1px;
     color: #f4f6f8;
   }
 }
 
-.image-view{
+.image-view {
   position: absolute;
   width: 55%;
   left: 45%;
   top: 19vh;
   max-width: 800px;
-  img{
+
+  img {
     width: 100%;
   }
 }
-section h2, .business-description{
+
+section h2,
+.business-description {
   text-align: center;
 }
 
 @media only screen and (max-width: $mobile) {
   .title {
     margin-top: 15vh;
+
     &-text {
       font-size: 32px;
     }

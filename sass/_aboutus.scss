@@ -1,15 +1,16 @@
-
-
 .aboutus {
   margin-bottom: 128px;
   margin-top: 40px;
-  .wrap-core-value{
+
+  .wrap-core-value {
     width: 200px;
     margin: 0 auto;
-    p{
+
+    p {
       text-align: left;
     }
   }
+
   &-name {
     font-style: normal;
     font-weight: 600;
@@ -20,6 +21,7 @@
     color: #fdd116;
     margin-bottom: 32px;
   }
+
   &-title {
     font-style: normal;
     font-weight: 600;
@@ -30,18 +32,21 @@
     color: #f4f6f8;
     margin-bottom: 32px;
   }
+
   &-description {
     font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 145%;
-    text-align: justify;
+    text-align: center;
     color: #b1c0cd;
     margin-bottom: 32px;
   }
+
   &-brand {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+
     &-item {
       display: flex;
       flex-direction: column;
@@ -49,42 +54,51 @@
       padding: 32px;
       filter: drop-shadow(0px 4px 8px rgba(254, 230, 129, 0.05));
       border-radius: 10px;
+
       img {
         max-width: 121px;
         height: 101px;
       }
+
       &-title {
         font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 145%;
-        color: #f4f6f8;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 130%;
+        letter-spacing: -1px;
+        color: #F4F6F8;
         margin-bottom: 8px;
         margin-top: 32px;
       }
+
       &-description {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 145%;
+        line-height: 140%;
         text-align: center;
-        letter-spacing: 0.2px;
         color: #dfe5ea;
         margin-top: 8px;
       }
     }
   }
 }
+
 @media only screen and (max-width: $mobile) {
   .aboutus {
+    margin-bottom: 32px;
+
     &-name {
       font-size: 32px;
     }
+
     &-brand {
       grid-template-columns: none;
+
       &-item {
         padding: 0;
         margin-bottom: 32px;
+
         &-title {
           margin-top: 24px;
           margin-bottom: 9px;
