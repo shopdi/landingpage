@@ -891,6 +891,9 @@ section h2,
   line-height: 145%;
   color: #f4f6f8;
   width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .token-list-item-content-left-title {
   display: flex;
@@ -979,7 +982,7 @@ section h2,
     gap: 4px 0;
   }
   .token-list-item-content-left-description {
-    width: 200px !important;
+    width: 260px !important;
   }
 }
 .timeline-title {
