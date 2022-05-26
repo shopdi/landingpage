@@ -68,6 +68,10 @@ button {
   margin: 0 auto;
 }
 
+.grecaptcha-badge {
+  display: none;
+}
+
 @media only screen and (max-width: 1500px) {
   .wrapper {
     margin: 24px 70px 0px 71px;
@@ -1309,13 +1313,14 @@ li.active-li .circle-shadow {
 }
 .team-gallery .slick-track {
   display: flex;
-  transition: all 1s;
+  transition: all 0.5s;
   align-items: center;
 }
 .team-gallery .slick-track .slick-slide img {
   -webkit-filter: grayscale(80%);
   filter: grayscale(80%);
   object-fit: cover;
+  transition: all 1s;
 }
 .team-gallery .slick-track .slick-active,
 .team-gallery .slick-track .slick-center {
@@ -1581,6 +1586,7 @@ li.active-li .circle-shadow {
   line-height: 20px;
   color: #f4f6f8;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 .footer-grid-column-text {
   font-style: normal;

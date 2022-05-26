@@ -3,6 +3,7 @@ body {
   font-family: $font;
   background-color: #2f3d4a;
 }
+
 button {
   cursor: pointer;
   outline: none;
@@ -14,9 +15,14 @@ button {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 // .feature .feature-list-item.slick-slide:not(.slick-center){
 //   transition: all 0.5s;
 // }
+
+.grecaptcha-badge {
+  display: none;
+}
 
 @media only screen and (max-width: 1500px) {
   .wrapper {
@@ -28,15 +34,16 @@ button {
   .wrapper {
     margin: 0;
   }
+
   .container {
     margin: 0 16px 0 16px;
   }
+
   nav.container {
     margin: 0;
   }
 }
 
 @media only screen and (min-width: $mobile) {
-  .container {
-  }
+  .container {}
 }

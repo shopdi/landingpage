@@ -132,7 +132,7 @@
 
     .slick-track {
       display: flex;
-      transition: all 1s;
+      transition: all .5s;
       align-items: center;
 
       .slick-slide {
@@ -140,6 +140,7 @@
           -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
           object-fit: cover;
+          transition: all 1s;
         }
       }
 
@@ -148,7 +149,6 @@
         transform: scale(1.5);
         padding: 63.5px 51px;
         border-radius: 8px;
-
 
         img {
           border-radius: 8px;

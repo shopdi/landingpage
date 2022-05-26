@@ -8,14 +8,16 @@ function randomIndex(number) {
   return Math.floor(Math.random() * number)
 }
 
-const indexTeam = randomIndex(6)
+const indexTeam = 0
+const loopTeam = true;
 
 $(".team-gallery").slick({
   dots: false,
   slidesToShow: 1,
-  infinite: false,
+  infinite: loopTeam,
   centerMode: true,
   variableWidth: true,
+  centerPadding: '300px',
   arrows: false,
   initialSlide: indexTeam,
   focusOnSelect: true,
@@ -40,7 +42,7 @@ $(".feature-list").slick({
   adaptiveHeight: true,
   variableWidth: true,
   focusOnSelect: true,
-  initialSlide: randomIndex(3),
+  initialSlide: 0,
   arrows: true,
   prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-arrow-left"></span></button>`,
   nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-arrow-right"></span></button>`,
@@ -74,7 +76,7 @@ $(".advisor-list").slick({
 $(".team-description-list").slick({
   dots: true,
   slidesToShow: 1,
-  infinite: false,
+  infinite: loopTeam,
   arrows: true,
   initialSlide: indexTeam,
   focusOnSelect: true,
