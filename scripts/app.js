@@ -17,7 +17,6 @@ $(".team-gallery").slick({
   infinite: loopTeam,
   centerMode: true,
   variableWidth: true,
-  centerPadding: '300px',
   arrows: false,
   initialSlide: indexTeam,
   focusOnSelect: true,

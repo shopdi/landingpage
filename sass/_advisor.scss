@@ -30,6 +30,10 @@
     margin: 0 64px;
   }
 
+  .slick-slide:not(.slick-center) {
+    opacity: 0.5;
+  }
+
   .slick-prev {
     span {
       &::before {
@@ -202,7 +206,9 @@
       font-size: 32px;
     }
 
-    .advisor-list {}
+    .slick-slide {
+      opacity: 1 !important;
+    }
 
     .slick-prev {
       left: 10px;

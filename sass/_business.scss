@@ -26,20 +26,25 @@
 
     &-item-odd {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: .25fr 1fr;
 
       &-left {
-        padding: 31.01px 0px 12.82px 111px;
         display: flex;
         align-items: center;
+        justify-content: center;
 
         img {
-          max-width: 263px;
-          max-height: 226px;
+          max-width: 136px;
+          max-height: 300px;
         }
       }
 
       &-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
         &-title {
           font-style: normal;
           font-weight: 600;
@@ -55,7 +60,7 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 140%;
-          text-align: left;
+          text-align: center;
           color: #dfe5ea;
           margin-bottom: 8px;
         }
@@ -64,7 +69,7 @@
 
     &-item-even {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: 1fr .25fr;
 
       &-left {
         order: 2;
@@ -73,13 +78,17 @@
         align-items: center;
 
         img {
-          max-width: 263px;
-          max-height: 226px;
+          max-width: 136px;
+          max-height: 300px;
         }
       }
 
       &-right {
         order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 
         &-title {
           font-style: normal;
@@ -96,7 +105,7 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 140%;
-          text-align: left;
+          text-align: center;
           color: #dfe5ea;
           margin-bottom: 8px;
         }
@@ -130,6 +139,12 @@
         grid-gap: 16px 0;
 
         &-left {
+
+          img {
+            max-width: 105px;
+            max-height: 232px;
+          }
+
           display: flex;
           justify-content: center;
           align-items: center;
@@ -157,6 +172,11 @@
         grid-template-columns: none !important;
 
         &-left {
+          img {
+            max-width: 105px;
+            max-height: 232px;
+          }
+
           display: flex;
           justify-content: center !important;
           align-items: center !important;

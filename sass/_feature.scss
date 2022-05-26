@@ -128,10 +128,11 @@
     .feature-list-item-text {
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 130%;
       color: #92A6B9;
       display: block;
+      text-align: justify;
       display: -webkit-box;
       -webkit-line-clamp: 10;
       -webkit-box-orient: vertical;
@@ -171,7 +172,8 @@
     .feature-list-item-text {
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 16px;
+      text-align: justify;
       line-height: 130%;
       color: #92A6B9;
       display: -webkit-box;

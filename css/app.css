@@ -480,16 +480,22 @@ section h2,
 }
 .business-list-item-odd {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 0.25fr 1fr;
 }
 .business-list-item-odd-left {
-  padding: 31.01px 0px 12.82px 111px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .business-list-item-odd-left img {
-  max-width: 263px;
-  max-height: 226px;
+  max-width: 136px;
+  max-height: 300px;
+}
+.business-list-item-odd-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .business-list-item-odd-right-title {
   font-style: normal;
@@ -505,13 +511,13 @@ section h2,
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  text-align: left;
+  text-align: center;
   color: #dfe5ea;
   margin-bottom: 8px;
 }
 .business-list-item-even {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr 0.25fr;
 }
 .business-list-item-even-left {
   order: 2;
@@ -520,11 +526,15 @@ section h2,
   align-items: center;
 }
 .business-list-item-even-left img {
-  max-width: 263px;
-  max-height: 226px;
+  max-width: 136px;
+  max-height: 300px;
 }
 .business-list-item-even-right {
   order: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .business-list-item-even-right-title {
   font-style: normal;
@@ -540,7 +550,7 @@ section h2,
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  text-align: left;
+  text-align: center;
   color: #dfe5ea;
   margin-bottom: 8px;
 }
@@ -574,6 +584,10 @@ section h2,
     padding: 0 !important;
     order: 2 !important;
   }
+  .business-list-item-odd-left img {
+    max-width: 105px;
+    max-height: 232px;
+  }
   .business-list-item-odd-right {
     order: 1 !important;
   }
@@ -593,6 +607,10 @@ section h2,
     display: flex;
     justify-content: center !important;
     align-items: center !important;
+  }
+  .business-list-item-even-left img {
+    max-width: 105px;
+    max-height: 232px;
   }
   .business-list-item-even-right-title {
     font-size: 24px !important;
@@ -712,10 +730,11 @@ section h2,
 .feature .feature-list-item.slick-slide.slick-center .feature-list-item-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 130%;
   color: #92A6B9;
   display: block;
+  text-align: justify;
   display: -webkit-box;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
@@ -751,7 +770,8 @@ section h2,
 .feature .feature-list-item.slick-slide:not(.slick-center) .feature-list-item-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
+  text-align: justify;
   line-height: 130%;
   color: #92A6B9;
   display: -webkit-box;
@@ -1316,7 +1336,7 @@ li.active-li .circle-shadow {
 }
 .team-gallery .slick-track {
   display: flex;
-  transition: all 0.5s;
+  transition: all 1s;
   align-items: center;
 }
 .team-gallery .slick-track .slick-slide img {
@@ -2119,6 +2139,9 @@ canvas {
 .advisor .slick-slide {
   margin: 0 64px;
 }
+.advisor .slick-slide:not(.slick-center) {
+  opacity: 0.5;
+}
 .advisor .slick-prev {
   background-color: transparent;
   position: absolute;
@@ -2234,6 +2257,9 @@ canvas {
     position: relative;
     margin-bottom: 32px;
     font-size: 32px;
+  }
+  .advisor .slick-slide {
+    opacity: 1 !important;
   }
   .advisor .slick-prev {
     left: 10px;
