@@ -69,7 +69,6 @@
   &-countdown {
     margin-top: 32px;
     display: flex;
-    gap: 0 16px;
     flex-wrap: nowrap;
     justify-content: space-around;
 
@@ -161,5 +160,11 @@
         color: #fdd116;
       }
     }
+  }
+}
+
+@media only screen and (min-width: $mobile) and (max-width: 1200px) {
+  .advers-countdown {
+    justify-content: stretch;
   }
 }

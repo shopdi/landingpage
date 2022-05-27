@@ -159,6 +159,17 @@
   }
 }
 
+@media only screen and (min-width: $mobile) and (max-width: 1200px) {
+  .token {
+    .token-chart-image {
+      img {
+        width: 100%;
+        max-height: none;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: $mobile) {
 
   .tokenomics {
@@ -187,6 +198,10 @@
 
       &-price {
         font-size: 16px !important;
+      }
+
+      img {
+        max-height: none;
       }
     }
 

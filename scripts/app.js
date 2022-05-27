@@ -4,6 +4,16 @@ function preventScroll(e) {
   return false;
 }
 
+var canvas = document.createElement("canvas");
+
+window.addEventListener('resize', () => {
+  setTimeout(() => {
+    canvas.width = window.innerWidth * 0.75;
+    canvas.height = window.innerHeight * 0.75;
+  }, 0)
+
+});
+
 function randomIndex(number) {
   return Math.floor(Math.random() * number)
 }
@@ -24,7 +34,7 @@ $(".team-gallery").slick({
   adaptiveHeight: true,
   responsive: [
     {
-      breakpoint: 922,
+      breakpoint: 992,
       settings: {
         slidesToShow: 1,
       },
@@ -46,7 +56,7 @@ $(".feature-list").slick({
   nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-arrow-right"></span></button>`,
   responsive: [
     {
-      breakpoint: 922,
+      breakpoint: 992,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -71,7 +81,7 @@ $(".advisor-list").slick({
   nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-chevron-right"></span></button>`,
   responsive: [
     {
-      breakpoint: 922,
+      breakpoint: 992,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -292,7 +302,7 @@ function countdown() {
   }, 1000);
 }
 
-var canvas = document.createElement("canvas");
+
 var width = (canvas.width = window.innerWidth * 0.75);
 var height = (canvas.height = window.innerHeight * 0.75);
 document.getElementsByClassName("first-view")[0].appendChild(canvas);
