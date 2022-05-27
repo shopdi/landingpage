@@ -44,6 +44,17 @@ $(".feature-list").slick({
   arrows: true,
   prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-arrow-left"></span></button>`,
   nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-arrow-right"></span></button>`,
+  responsive: [
+    {
+      breakpoint: 922,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: false,
+        centerMode: false,
+      },
+    },
+  ],
 });
 
 

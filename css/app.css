@@ -54,6 +54,10 @@ body {
   line-height: 1;
   font-family: "Comfortaa", cursive;
   background-color: #2f3d4a;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 button {
@@ -61,6 +65,10 @@ button {
   outline: none;
   border: none;
   font-family: "Comfortaa", cursive;
+}
+
+.padding-80 {
+  padding: 80px !important;
 }
 
 .wrapper {
@@ -224,6 +232,9 @@ section h2,
 @media only screen and (max-width: 992px) {
   .wrapper-view {
     grid-template-columns: none !important;
+  }
+  .wrapper-view .advers-button {
+    justify-content: center;
   }
   .wrapper-view-text {
     font-size: 16px !important;
@@ -500,9 +511,10 @@ section h2,
   height: 266px;
   background: #6D88A2;
   position: absolute;
-  opacity: 0.8;
   border-radius: 50%;
   z-index: -999;
+  opacity: 0.5;
+  filter: blur(1px);
 }
 .business-list-item-odd-left img {
   width: 136px;
@@ -548,9 +560,10 @@ section h2,
   height: 266px;
   background: #6D88A2;
   position: absolute;
-  opacity: 0.8;
   border-radius: 50%;
   z-index: -999;
+  opacity: 0.5;
+  filter: blur(1px);
 }
 .business-list-item-even-left img {
   width: 136px;
@@ -857,7 +870,7 @@ section h2,
   }
   .feature .feature-list-item {
     min-height: 500px !important;
-    width: 330px !important;
+    width: 330px;
   }
   .feature .feature-list-item-title {
     font-size: 18px !important;
@@ -1023,6 +1036,7 @@ section h2,
   }
   .token img {
     width: 100%;
+    max-width: 550px;
   }
   .token-chart-title {
     font-size: 32px !important;
@@ -1555,7 +1569,7 @@ li.active-li .circle-shadow {
 
 @media only screen and (max-width: 992px) {
   .partners {
-    margin-top: 32px;
+    margin-top: 128px;
   }
   .partners-title {
     font-size: 32px !important;

@@ -39,9 +39,10 @@
           height: 266px;
           background: #6D88A2;
           position: absolute;
-          opacity: 0.8;
           border-radius: 50%;
           z-index: -999;
+          opacity: 0.5;
+          filter: blur(1px);
         }
 
         img {
@@ -94,9 +95,10 @@
           height: 266px;
           background: #6D88A2;
           position: absolute;
-          opacity: 0.8;
           border-radius: 50%;
           z-index: -999;
+          opacity: 0.5;
+          filter: blur(1px);
         }
 
         img {
@@ -164,6 +166,7 @@
           &::before {
             width: 200px;
             height: 200px;
+
           }
 
           img {
