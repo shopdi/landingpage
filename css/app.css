@@ -265,7 +265,7 @@ section h2,
 }
 .advers-text {
   font-style: normal;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 28px;
   line-height: 130%;
   letter-spacing: -1px;
@@ -1924,9 +1924,8 @@ nav {
   width: 100vw;
   height: 100vh;
   z-index: -1;
+  filter: blur(40px);
   background: linear-gradient(179.54deg, rgba(48, 61, 74, 0.3) -110.88%, rgba(48, 61, 74, 0) 110.14%);
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
 }
 
 canvas {
