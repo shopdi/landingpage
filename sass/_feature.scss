@@ -7,8 +7,7 @@
 
     .feature-list-item-image {
       img {
-        max-width: 127px !important;
-        max-height: 62px !important;
+        height: 115px;
       }
     }
 
@@ -24,16 +23,16 @@
 }
 
 .feature {
-  margin-top: 128px;
+  margin-top: 256px;
 
   .slick-slide {
-    margin: 0 32px;
+    margin: 0 16px;
   }
 
   .slick-prev {
     span {
       &::before {
-        color: #fdd116;
+        color: #F4F6F8;
       }
 
       font-size: 22px;
@@ -104,14 +103,13 @@
     border-radius: 15px;
 
     .feature-list-item-image {
-      margin-bottom: 35px;
+      margin-bottom: 32px;
       display: flex;
       align-items: center;
       justify-content: center;
 
       img {
-        max-width: 233px !important;
-        max-height: 83px !important;
+        height: 115px;
       }
     }
 
@@ -121,7 +119,7 @@
       font-size: 28px;
       line-height: 130%;
       letter-spacing: -1px;
-      color: #f4f6f8;
+      color: #FDD116;
       margin-bottom: 8px;
     }
 
@@ -129,10 +127,9 @@
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
-      line-height: 130%;
-      color: #92A6B9;
+      line-height: 140%;
+      color: #f4f6f8;
       display: block;
-      text-align: justify;
       display: -webkit-box;
       -webkit-line-clamp: 10;
       -webkit-box-orient: vertical;
@@ -146,10 +143,10 @@
     border: 1px solid #fee681;
     border-radius: 15px;
     width: 550px;
-    height: 348px;
+    height: 400px;
 
     .feature-list-item-image {
-      margin-bottom: 52px;
+      margin-bottom: 32px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -161,7 +158,7 @@
       font-size: 28px;
       line-height: 130%;
       letter-spacing: -1px;
-      color: #f4f6f8;
+      color: #FDD116;
       margin-bottom: 8px;
       display: -webkit-box;
       -webkit-line-clamp: 1;
@@ -173,9 +170,8 @@
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
-      text-align: justify;
-      line-height: 130%;
-      color: #92A6B9;
+      line-height: 140%;
+      color: #f4f6f8;
       display: -webkit-box;
       -webkit-line-clamp: 6;
       -webkit-box-orient: vertical;
@@ -260,8 +256,7 @@
       margin-bottom: 32px !important;
 
       img {
-        max-width: 233px !important;
-        max-height: 83px !important;
+        height: 100px !important;
       }
     }
 
@@ -272,6 +267,7 @@
 
     .feature-list-item-title {
       font-size: 18px !important;
+      color: #F4F6F8 !important;
     }
 
     .feature-list-item-text {

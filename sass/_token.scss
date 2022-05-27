@@ -1,6 +1,6 @@
 .tokenomics {
-  margin-top: 128px;
-  margin-bottom: 128px;
+  margin-top: 256px;
+  margin-bottom: 256px;
 }
 
 .token {
@@ -67,7 +67,7 @@
             font-weight: 400;
             font-size: 12px;
             line-height: 145%;
-            color: #92a6b9;
+            color: #f4f6f8;
 
           }
         }
@@ -119,8 +119,7 @@
 
   &-chart {
     img {
-      width: 100%;
-      max-width: 672px;
+      max-height: 524px;
     }
 
     &-title {
@@ -163,14 +162,18 @@
 @media only screen and (max-width: $mobile) {
 
   .tokenomics {
-    margin-top: 40px;
-    margin-bottom: 64px;
+    margin-top: 128px;
+    margin-bottom: 128px;
   }
 
   .token {
     grid-template-columns: none !important;
     grid-gap: 32px 0px !important;
     margin-bottom: 64px !important;
+
+    img {
+      width: 100%;
+    }
 
     &-chart {
       &-title {
@@ -197,7 +200,7 @@
             gap: 4px 0;
 
             &-description {
-              width: 260px !important;
+              width: 210px !important;
 
             }
           }

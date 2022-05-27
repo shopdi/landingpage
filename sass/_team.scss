@@ -1,5 +1,5 @@
 .team {
-  margin-top: 128px;
+  margin-top: 256px;
 
   &-title {
     font-style: normal;
@@ -75,11 +75,10 @@
     &-item {
       h3 {
         font-style: normal;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 145%;
-        letter-spacing: -0.5px;
-        color: #dfe5ea;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #F4F6F8;
         padding: 0 298.75px 0 288.25px;
         text-align: left;
       }
@@ -98,7 +97,7 @@
           font-size: 32px;
 
           &::before {
-            color: #fdd116;
+            color: #FEE681;
           }
 
           &:hover {
@@ -113,7 +112,7 @@
           font-size: 32px;
 
           &::before {
-            color: #fdd116;
+            color: #FEE681;
           }
 
           &:hover {
@@ -212,6 +211,13 @@
       font-size: 32px !important;
     }
 
+    .slick-track {
+      .slick-center {
+        transform: scale(1.1);
+        padding: 30px 10px;
+      }
+    }
+
     &-description-list {
       .slick-prev {
         span {
@@ -224,6 +230,8 @@
           width: 50% !important;
         }
       }
+
+
 
       .slick-next {
         span {

@@ -24,10 +24,9 @@ $(".team-gallery").slick({
   adaptiveHeight: true,
   responsive: [
     {
-      breakpoint: 900,
+      breakpoint: 922,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
       },
     },
   ],

@@ -54,11 +54,11 @@
 
   &-text {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 28px;
     line-height: 130%;
     letter-spacing: -1px;
-    color: #f4f6f8;
+    color: #F4F6F8;
     text-align: left;
   }
 
@@ -79,7 +79,7 @@
         font-style: normal;
         font-weight: 600;
         font-size: max(2.5em, 40px);
-        line-height: 145%;
+        line-height: 130%;
         letter-spacing: -1px;
         color: #f4f6f8;
       }
@@ -88,9 +88,8 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 145%;
-        letter-spacing: 0.2px;
-        color: #f4f6f8;
+        line-height: 140%;
+        color: #F4F6F8;
       }
     }
   }

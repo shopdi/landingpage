@@ -1,6 +1,15 @@
 .aboutus {
-  margin-bottom: 128px;
+  margin-bottom: 256px;
   margin-top: 40px;
+
+
+  .aboutus-brand-item-warpper-image {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .wrap-core-value {
     width: 200px;
@@ -15,7 +24,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: max(2.5em, 40px);
-    line-height: 145%;
+    line-height: 130%;
     text-align: center;
     letter-spacing: -1px;
     color: #fdd116;
@@ -37,10 +46,10 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 145%;
+    line-height: 135%;
     text-align: center;
-    color: #b1c0cd;
-    margin-bottom: 32px;
+    color: #F4F6F8;
+    letter-spacing: -0.5px;
   }
 
   &-brand {
@@ -51,24 +60,22 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 32px;
+      padding: 0 32px;
       filter: drop-shadow(0px 4px 8px rgba(254, 230, 129, 0.05));
       border-radius: 10px;
 
       img {
         max-width: 121px;
-        height: 101px;
+        max-height: 130px;
       }
 
       &-title {
         font-style: normal;
         font-weight: 600;
-        font-size: 28px;
-        line-height: 130%;
+        font-size: 22px;
+        line-height: 135%;
         letter-spacing: -1px;
         color: #F4F6F8;
-        margin-bottom: 8px;
-        margin-top: 32px;
       }
 
       &-description {
@@ -86,7 +93,7 @@
 
 @media only screen and (max-width: $mobile) {
   .aboutus {
-    margin-bottom: 32px;
+    margin-bottom: 128px;
 
     &-name {
       font-size: 32px;
@@ -97,11 +104,15 @@
 
       &-item {
         padding: 0;
-        margin-bottom: 32px;
+        margin-bottom: 8px;
 
         &-title {
-          margin-top: 24px;
-          margin-bottom: 9px;
+          margin-bottom: 8px;
+          font-size: 16px;
+        }
+
+        &-description {
+          margin-bottom: 32px;
         }
       }
     }
