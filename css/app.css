@@ -1467,11 +1467,11 @@ li.active-li .circle-shadow {
   }
   .team-description-list-item h3 {
     font-style: normal;
-    font-weight: 600;
-    font-size: 18px !important;
+    font-weight: 400;
+    font-size: 16px !important;
     line-height: 145%;
     letter-spacing: -0.5px;
-    color: #dfe5ea;
+    color: #F4F6F8;
     padding: 0 42px 0 38px !important;
   }
 }
