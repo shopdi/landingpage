@@ -1910,8 +1910,7 @@ nav {
   left: 0;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
+  filter: blur(40px);
   z-index: -2;
 }
 
