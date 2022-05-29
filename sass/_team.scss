@@ -134,7 +134,7 @@
       align-items: center;
 
       .slick-slide {
-        transform: scale(1, .9);
+        transform: scale(1, .85);
 
         img {
           -webkit-filter: grayscale(80%);
@@ -165,7 +165,8 @@
       position: relative;
 
       img {
-        height: 339px;
+        width: 255px;
+        height: 335px;
       }
 
       &-info {

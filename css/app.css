@@ -1405,7 +1405,7 @@ li.active-li .circle-shadow {
   align-items: center;
 }
 .team-gallery .slick-track .slick-slide {
-  transform: scale(1, 0.9);
+  transform: scale(1, 0.85);
 }
 .team-gallery .slick-track .slick-slide img {
   -webkit-filter: grayscale(80%);
@@ -1432,7 +1432,8 @@ li.active-li .circle-shadow {
   position: relative;
 }
 .team-gallery-member img {
-  height: 339px;
+  width: 255px;
+  height: 335px;
 }
 .team-gallery-member-info {
   position: absolute;
