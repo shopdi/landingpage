@@ -1,5 +1,3 @@
-
-
 .header_mobile {
   display: none;
 }
@@ -10,20 +8,24 @@
     cursor: pointer;
     min-width: 320px;
   }
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   &-logo {
     // margin-right: 413.29px;
   }
+
   &-menu {
     flex-grow: 1;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     max-width: 800px;
+
     &-item {
-      color: #fffceb;
+      color: #F4F6F8;
       font-style: normal;
       font-weight: 600;
       line-height: calc(61 / 28.6);
@@ -33,16 +35,18 @@
       cursor: pointer;
       transition: all 0.5s;
       white-space: nowrap;
+
       .header-menu-text {
         &:link {
-          color: #fffceb;
+          color: #F4F6F8;
         }
+
         &:link {
-          color: #fffceb;
+          color: #F4F6F8;
         }
 
         &:visited {
-          color: #fffceb;
+          color: #F4F6F8;
         }
 
         &:hover {
@@ -51,15 +55,17 @@
         }
 
         &:active {
-          color: #fffceb;
+          color: #F4F6F8;
         }
       }
+
       .header-menu-text.active {
         color: #fdd116;
         border-bottom: 1px solid #fdd116;
       }
     }
   }
+
   &-language {
     margin-left: 32.79px;
     border: 1px solid #f4f6f8;
@@ -70,6 +76,7 @@
     padding: 4px 8px;
     margin-top: 5px;
     cursor: pointer;
+
     &-text {
       font-size: 12px;
       font-weight: 400;
@@ -81,25 +88,30 @@
     }
   }
 }
+
 @media only screen and (max-width: $mobile) {
   .header {
     display: none;
   }
-  .box-menu{
+
+  .box-menu {
     .header_mobile {
       margin: 8px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       .header_mobile-logo {
         cursor: pointer;
       }
+
       .header_mobile-menu-btn {
         width: 62.25px;
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
       }
+
       .header_mobile-language {
         width: 62.25px;
       }

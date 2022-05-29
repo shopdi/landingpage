@@ -23,10 +23,20 @@
     margin-top: 26px;
     margin-bottom: 91px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-gap: 0px 177.33px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 0px 67.7px;
 
     &-column {
+
+      &-description {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 150%;
+        color: #F4F6F8;
+        margin-bottom: 8px;
+      }
+
       &-social {
         span:hover {
           &::before {
@@ -86,6 +96,38 @@
         font-size: 12px;
         line-height: 20px;
         color: #f4f6f8;
+
+        &-intro {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 135%;
+          color: #F4F6F8;
+          margin-bottom: 4px;
+
+          a {
+            &:link {
+              color: #F4F6F8;
+            }
+
+            &:link {
+              color: #F4F6F8;
+            }
+
+            &:visited {
+              color: #F4F6F8;
+            }
+
+            &:hover {
+              color: #fdd116;
+              border-bottom: 1px solid #fdd116;
+            }
+
+            &:active {
+              color: #F4F6F8;
+            }
+          }
+        }
       }
 
       &-policys {

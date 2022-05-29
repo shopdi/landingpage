@@ -120,7 +120,7 @@ button {
   max-width: 800px;
 }
 .header-menu-item {
-  color: #fffceb;
+  color: #F4F6F8;
   font-style: normal;
   font-weight: 600;
   line-height: 2.1328671329;
@@ -132,20 +132,20 @@ button {
   white-space: nowrap;
 }
 .header-menu-item .header-menu-text:link {
-  color: #fffceb;
+  color: #F4F6F8;
 }
 .header-menu-item .header-menu-text:link {
-  color: #fffceb;
+  color: #F4F6F8;
 }
 .header-menu-item .header-menu-text:visited {
-  color: #fffceb;
+  color: #F4F6F8;
 }
 .header-menu-item .header-menu-text:hover {
   color: #fdd116;
   border-bottom: 1px solid #fdd116;
 }
 .header-menu-item .header-menu-text:active {
-  color: #fffceb;
+  color: #F4F6F8;
 }
 .header-menu-item .header-menu-text.active {
   color: #fdd116;
@@ -374,7 +374,7 @@ section h2,
   }
 }
 .aboutus {
-  margin-bottom: 256px;
+  margin-bottom: 128px;
   margin-top: 40px;
 }
 .aboutus .aboutus-brand-item-warpper-image {
@@ -456,7 +456,7 @@ section h2,
 
 @media only screen and (max-width: 992px) {
   .aboutus {
-    margin-bottom: 128px;
+    margin-bottom: 88px;
   }
   .aboutus-name {
     font-size: 32px;
@@ -600,7 +600,7 @@ section h2,
 
 @media only screen and (max-width: 992px) {
   .business {
-    margin-bottom: 128px !important;
+    margin-bottom: 88px !important;
   }
   .business-name {
     font-size: 32px !important;
@@ -698,7 +698,7 @@ section h2,
   }
 }
 .feature {
-  margin-top: 256px;
+  margin-top: 128px;
 }
 .feature .slick-slide {
   margin: 0 16px;
@@ -889,8 +889,8 @@ section h2,
   }
 }
 .tokenomics {
-  margin-top: 256px;
-  margin-bottom: 256px;
+  margin-top: 128px;
+  margin-bottom: 128px;
 }
 
 .token {
@@ -931,6 +931,7 @@ section h2,
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .token-list-item-content-right {
   padding-right: 20px;
@@ -1036,8 +1037,8 @@ section h2,
 }
 @media only screen and (max-width: 992px) {
   .tokenomics {
-    margin-top: 128px;
-    margin-bottom: 128px;
+    margin-top: 88px;
+    margin-bottom: 88px;
   }
 
   .token {
@@ -1295,7 +1296,7 @@ li.active-li .circle-shadow {
   }
 }
 .team {
-  margin-top: 256px;
+  margin-top: 128px;
 }
 .team-title {
   font-style: normal;
@@ -1403,12 +1404,12 @@ li.active-li .circle-shadow {
   align-items: center;
 }
 .team-gallery .slick-track .slick-slide {
-  transform: scale(1, 0.8);
+  transform: scale(1, 0.85);
 }
 .team-gallery .slick-track .slick-slide img {
   -webkit-filter: grayscale(80%);
   filter: grayscale(80%);
-  object-fit: cover;
+  object-fit: fill;
 }
 .team-gallery .slick-track .slick-center,
 .team-gallery .slick-track .slick-active {
@@ -1464,7 +1465,7 @@ li.active-li .circle-shadow {
 
 @media only screen and (max-width: 992px) {
   .team {
-    margin-top: 64px;
+    margin-top: 88px;
   }
   .team-title {
     font-size: 32px !important;
@@ -1501,7 +1502,7 @@ li.active-li .circle-shadow {
   }
 }
 .partners {
-  margin-top: 256px;
+  margin-top: 128px;
 }
 .partners-title {
   font-style: normal;
@@ -1580,7 +1581,7 @@ li.active-li .circle-shadow {
 
 @media only screen and (max-width: 992px) {
   .partners {
-    margin-top: 128px;
+    margin-top: 88px;
   }
   .partners-title {
     font-size: 32px !important;
@@ -1632,8 +1633,16 @@ li.active-li .circle-shadow {
   margin-top: 26px;
   margin-bottom: 91px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-gap: 0px 177.33px;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 0px 67.7px;
+}
+.footer-grid-column-description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 150%;
+  color: #F4F6F8;
+  margin-bottom: 8px;
 }
 .footer-grid-column-social {
   display: flex;
@@ -1685,6 +1694,30 @@ li.active-li .circle-shadow {
   font-size: 12px;
   line-height: 20px;
   color: #f4f6f8;
+}
+.footer-grid-column-text-intro {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 135%;
+  color: #F4F6F8;
+  margin-bottom: 4px;
+}
+.footer-grid-column-text-intro a:link {
+  color: #F4F6F8;
+}
+.footer-grid-column-text-intro a:link {
+  color: #F4F6F8;
+}
+.footer-grid-column-text-intro a:visited {
+  color: #F4F6F8;
+}
+.footer-grid-column-text-intro a:hover {
+  color: #fdd116;
+  border-bottom: 1px solid #fdd116;
+}
+.footer-grid-column-text-intro a:active {
+  color: #F4F6F8;
 }
 .footer-grid-column-policys {
   display: flex;
@@ -2206,7 +2239,7 @@ canvas {
   }
 }
 .advisor {
-  margin-top: 256px;
+  margin-top: 128px;
 }
 .advisor .slick-slide {
   margin: 0 64px;
@@ -2327,7 +2360,7 @@ canvas {
 
 @media only screen and (max-width: 992px) {
   .advisor {
-    margin-top: 128px;
+    margin-top: 88px;
   }
   .advisor-name {
     position: relative;

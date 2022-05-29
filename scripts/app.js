@@ -26,6 +26,7 @@ $(".team-gallery").slick({
   slidesToShow: 1,
   draggable: false,
   infinite: loopTeam,
+  speed: 200,
   centerMode: true,
   variableWidth: true,
   arrows: false,
@@ -33,7 +34,6 @@ $(".team-gallery").slick({
   focusOnSelect: true,
   asNavFor: ".team-description-list",
   adaptiveHeight: true,
-  speed: 0,
   responsive: [
     {
       breakpoint: 992,
@@ -42,6 +42,12 @@ $(".team-gallery").slick({
       },
     },
   ],
+}).on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+  if (currentSlide !== nextSlide) {
+    document.querySelectorAll('.slick-center + .slick-cloned').forEach((next) => {
+      setTimeout(() => next.classList.add('slick-current', 'slick-center'));
+    });
+  }
 });
 
 
@@ -67,6 +73,13 @@ $(".feature-list").slick({
       },
     },
   ],
+}).on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+  if (currentSlide !== nextSlide) {
+    document.querySelectorAll('.slick-center + .slick-cloned').forEach((next) => {
+      // timeout required or Slick will overwrite the classes
+      setTimeout(() => next.classList.add('slick-current', 'slick-center'));
+    });
+  }
 });
 
 
@@ -77,7 +90,7 @@ $(".advisor-list").slick({
   variableWidth: true,
   centerMode: true,
   focusOnSelect: true,
-  initialSlide: randomIndex(5),
+  initialSlide: randomIndex(4),
   arrows: true,
   prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-chevron-left"></span></button>`,
   nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-chevron-right"></span></button>`,
@@ -99,7 +112,7 @@ $(".team-description-list").slick({
   slidesToShow: 1,
   infinite: loopTeam,
   arrows: true,
-  speed: 0,
+  speed: 200,
   initialSlide: indexTeam,
   focusOnSelect: true,
   asNavFor: ".team-gallery",
@@ -244,7 +257,7 @@ function scrollActive() {
     const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 120,
       sectionId = current.getAttribute("id");
-    if (scrollY > 65) {
+    if (scrollY > 150) {
       $("nav").addClass("fixed-menu");
     } else {
       $("nav").removeClass("fixed-menu");
