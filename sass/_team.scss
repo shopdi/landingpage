@@ -131,23 +131,23 @@
 
     .slick-track {
       display: flex;
-      transition: all 1s;
       align-items: center;
 
       .slick-slide {
+        transform: scale(1, 0.8);
+
         img {
           -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
           object-fit: cover;
-          transition: all 1s;
         }
       }
 
-      .slick-active,
-      .slick-center {
-        transform: scale(1.5);
-        padding: 63.5px 51px;
+      .slick-center,
+      .slick-active {
+        transform: scale(1);
         border-radius: 8px;
+        z-index: 9999;
 
         img {
           border-radius: 8px;
@@ -165,13 +165,13 @@
       position: relative;
 
       img {
-        width: 205px;
-        height: 253px;
+        width: 255px;
+        height: 335px;
       }
 
       &-info {
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         background: #374756;
         display: none;
@@ -213,8 +213,7 @@
 
     .slick-track {
       .slick-center {
-        transform: scale(1.1);
-        padding: 30px 10px;
+        transform: scale(1);
       }
     }
 

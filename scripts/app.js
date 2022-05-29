@@ -10,7 +10,7 @@ window.addEventListener('resize', () => {
   setTimeout(() => {
     canvas.width = window.innerWidth * 0.75;
     canvas.height = window.innerHeight * 0.75;
-  }, 0)
+  }, 500)
 
 });
 
@@ -24,6 +24,7 @@ const loopTeam = true;
 $(".team-gallery").slick({
   dots: false,
   slidesToShow: 1,
+  draggable: false,
   infinite: loopTeam,
   centerMode: true,
   variableWidth: true,
@@ -32,6 +33,7 @@ $(".team-gallery").slick({
   focusOnSelect: true,
   asNavFor: ".team-description-list",
   adaptiveHeight: true,
+  speed: 0,
   responsive: [
     {
       breakpoint: 992,
@@ -97,6 +99,7 @@ $(".team-description-list").slick({
   slidesToShow: 1,
   infinite: loopTeam,
   arrows: true,
+  speed: 0,
   initialSlide: indexTeam,
   focusOnSelect: true,
   asNavFor: ".team-gallery",
