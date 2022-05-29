@@ -104,6 +104,9 @@
           line-height: 135%;
           color: #F4F6F8;
           margin-bottom: 4px;
+          display: grid;
+          grid-template-columns: 0.15fr 1fr;
+
 
           a {
             &:link {

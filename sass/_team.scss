@@ -1,5 +1,5 @@
 .team {
-  margin-top: 128px;
+  margin-top: 192px;
 
   &-title {
     font-style: normal;
@@ -134,7 +134,7 @@
       align-items: center;
 
       .slick-slide {
-        transform: scale(1, .85);
+        transform: scale(1, .9);
 
         img {
           -webkit-filter: grayscale(80%);
@@ -165,8 +165,7 @@
       position: relative;
 
       img {
-        width: 255px;
-        height: 335px;
+        height: 339px;
       }
 
       &-info {

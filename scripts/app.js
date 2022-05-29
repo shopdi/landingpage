@@ -24,7 +24,7 @@ const loopTeam = true;
 $(".team-gallery").slick({
   dots: false,
   slidesToShow: 1,
-  draggable: false,
+  draggable: true,
   infinite: loopTeam,
   speed: 200,
   centerMode: true,

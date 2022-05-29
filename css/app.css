@@ -374,7 +374,7 @@ section h2,
   }
 }
 .aboutus {
-  margin-bottom: 128px;
+  margin-bottom: 192px;
   margin-top: 40px;
 }
 .aboutus .aboutus-brand-item-warpper-image {
@@ -698,7 +698,7 @@ section h2,
   }
 }
 .feature {
-  margin-top: 128px;
+  margin-top: 192px;
 }
 .feature .slick-slide {
   margin: 0 16px;
@@ -889,8 +889,8 @@ section h2,
   }
 }
 .tokenomics {
-  margin-top: 128px;
-  margin-bottom: 128px;
+  margin-top: 192px;
+  margin-bottom: 192px;
 }
 
 .token {
@@ -1296,7 +1296,7 @@ li.active-li .circle-shadow {
   }
 }
 .team {
-  margin-top: 128px;
+  margin-top: 192px;
 }
 .team-title {
   font-style: normal;
@@ -1404,7 +1404,7 @@ li.active-li .circle-shadow {
   align-items: center;
 }
 .team-gallery .slick-track .slick-slide {
-  transform: scale(1, 0.85);
+  transform: scale(1, 0.9);
 }
 .team-gallery .slick-track .slick-slide img {
   -webkit-filter: grayscale(80%);
@@ -1431,8 +1431,7 @@ li.active-li .circle-shadow {
   position: relative;
 }
 .team-gallery-member img {
-  width: 255px;
-  height: 335px;
+  height: 339px;
 }
 .team-gallery-member-info {
   position: absolute;
@@ -1502,7 +1501,7 @@ li.active-li .circle-shadow {
   }
 }
 .partners {
-  margin-top: 128px;
+  margin-top: 192px;
 }
 .partners-title {
   font-style: normal;
@@ -1702,6 +1701,8 @@ li.active-li .circle-shadow {
   line-height: 135%;
   color: #F4F6F8;
   margin-bottom: 4px;
+  display: grid;
+  grid-template-columns: 0.15fr 1fr;
 }
 .footer-grid-column-text-intro a:link {
   color: #F4F6F8;
@@ -2239,7 +2240,7 @@ canvas {
   }
 }
 .advisor {
-  margin-top: 128px;
+  margin-top: 192px;
 }
 .advisor .slick-slide {
   margin: 0 64px;
