@@ -250,14 +250,22 @@ const app = () => {
 };
 const sections = document.querySelectorAll("section[id]");
 
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top - 100
+  }, 200);
+});
+
 function scrollActive() {
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 120,
+      sectionTop = current.offsetTop - 20,
       sectionId = current.getAttribute("id");
-    if (scrollY > 150) {
+    if (scrollY > 65) {
       $("nav").addClass("fixed-menu");
     } else {
       $("nav").removeClass("fixed-menu");

@@ -376,6 +376,7 @@ section h2,
 .aboutus {
   margin-bottom: 192px;
   margin-top: 40px;
+  scroll-margin-block-start: 110px;
 }
 .aboutus .aboutus-brand-item-warpper-image {
   width: 150px;
@@ -1593,7 +1594,7 @@ li.active-li .circle-shadow {
     height: 100px !important;
   }
   .partners-brand-item-logo img {
-    max-width: 70px !important;
+    max-width: 71px !important;
     max-height: 60px !important;
   }
   .partners-cryptos {
