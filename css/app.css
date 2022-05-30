@@ -1693,8 +1693,8 @@ li.active-li .circle-shadow {
   margin-top: 26px;
   margin-bottom: 91px;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-gap: 0px 146.7px;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-gap: 0px 120px;
 }
 .footer-grid-column-description {
   font-style: normal;
