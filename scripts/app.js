@@ -263,7 +263,7 @@ function scrollActive() {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 20,
+      sectionTop = current.offsetTop - 120,
       sectionId = current.getAttribute("id");
     if (scrollY > 65) {
       $("nav").addClass("fixed-menu");
