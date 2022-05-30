@@ -254,7 +254,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
 
   $('html, body').animate({
-    scrollTop: $($.attr(this, 'href')).offset().top - 100
+    scrollTop: $($.attr(this, 'href')).offset().top - 160
   }, 200);
 });
 
@@ -263,7 +263,7 @@ function scrollActive() {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 120,
+      sectionTop = current.offsetTop - 200,
       sectionId = current.getAttribute("id");
     if (scrollY > 65) {
       $("nav").addClass("fixed-menu");
