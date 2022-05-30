@@ -286,7 +286,7 @@ section h2,
   margin-top: 32px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .advers-countdown-item {
   padding: 0 8px;
