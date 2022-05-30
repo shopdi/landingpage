@@ -27,7 +27,7 @@
       top: 30%;
       left: 200px;
       transform: translate(-50%, -50%);
-      z-index: 999;
+      z-index: 1;
     }
 
     .slick-next {
@@ -45,7 +45,7 @@
       top: 30%;
       right: 200px;
       transform: translate(-50%, -50%);
-      z-index: 999;
+      z-index: 1;
     }
 
     .slick-dots {
@@ -134,12 +134,14 @@
       align-items: center;
 
       .slick-slide {
-        transform: scale(1, .85);
+        transform: scale(0.8);
+        margin: 0 -26px;
 
         img {
           -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
-          object-fit: fill;
+          object-fit: contain;
+          object-position: top;
         }
       }
 

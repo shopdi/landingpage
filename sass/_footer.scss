@@ -1,19 +1,14 @@
-@media only screen and (max-width: 1200px) {
-  .footer {
-    &-grid {
-      margin-top: 26px;
-      margin-bottom: 91px;
-      display: grid;
-      grid-template-columns: none !important;
-      grid-gap: 48px 0px !important;
-    }
-  }
-}
-
 .footer {
   margin-top: 114.79px;
   border-top: 1px solid #92a6b9;
   border-bottom: 1px solid #92a6b9;
+
+
+  .column-image-logo {
+    margin-top: 8px;
+    display: flex;
+    gap: 0 6px;
+  }
 
   a {
     margin-bottom: 6px;
@@ -23,8 +18,8 @@
     margin-top: 26px;
     margin-bottom: 91px;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-gap: 0px 67.7px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 0px 146.7px;
 
     &-column {
 
@@ -67,8 +62,6 @@
       }
 
       &-appstore {
-        margin-top: 8px;
-        margin-bottom: 6px;
         cursor: pointer;
       }
 
@@ -105,7 +98,7 @@
           color: #F4F6F8;
           margin-bottom: 4px;
           display: grid;
-          grid-template-columns: 0.15fr 1fr;
+          grid-template-columns: 65px 1fr;
 
 
           a {
@@ -145,6 +138,18 @@
           color: #CBD5DE;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    &-grid {
+      margin-top: 26px;
+      margin-bottom: 16px;
+      display: grid;
+      grid-template-columns: none !important;
+      grid-gap: 48px 0px !important;
     }
   }
 }

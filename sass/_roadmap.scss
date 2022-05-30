@@ -53,10 +53,37 @@
     overflow-x: auto;
     overflow-y: hidden;
     cursor: pointer;
+    $scrollbar-1-thumb-width: 8px;
+    $scrollbar-1-thumb-color: #fdd116;
+    $scrollbar-1-track-color: #b0b7c4;
 
+    // Chrome & Opera
     &::-webkit-scrollbar {
-      display: none;
+      width: $scrollbar-1-thumb-width;
+      height: $scrollbar-1-thumb-width;
+
+      &-track {
+        background-clip: content-box;
+        border: 2px solid transparent;
+      }
+
+      &-thumb {
+        background-color: $scrollbar-1-thumb-color;
+
+        &:hover {
+          background-color: mix($scrollbar-1-thumb-color, #000, 90%);
+        }
+      }
+
+      &-corner,
+      &-track {
+        background-color: $scrollbar-1-track-color;
+      }
     }
+
+    scrollbar-width: thin;
+    scrollbar-color: $scrollbar-1-thumb-color $scrollbar-1-track-color;
+
   }
 }
 

@@ -49,7 +49,7 @@
     top: 50%;
     left: 17%;
     transform: translate(-50%, -50%);
-    z-index: 999;
+    z-index: 1;
   }
 
   .slick-next {
@@ -67,7 +67,7 @@
     top: 50%;
     right: 15%;
     transform: translate(-50%, -50%);
-    z-index: 999;
+    z-index: 1;
   }
 
   .slick-dots {
@@ -226,7 +226,7 @@
     }
 
     .slick-slide {
-      height: 600px !important;
+      height: auto !important;
       margin: 0 32px;
     }
 
@@ -251,10 +251,6 @@
     .advisor-list-item-text {
       font-size: 16px !important;
       min-height: min-content !important;
-      display: -webkit-box !important;
-      -webkit-line-clamp: 12 !important;
-      -webkit-box-orient: vertical !important;
-      overflow: hidden !important;
     }
   }
 }

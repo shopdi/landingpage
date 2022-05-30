@@ -195,6 +195,7 @@ function formEvent(e) {
   document
     .getElementById("formWhiteListSubmit")
     .addEventListener("submit", onSubmit);
+
 }
 
 const app = () => {
@@ -212,6 +213,7 @@ const app = () => {
     containerWhitelist = document.querySelector(".form-whitelist");
     whitelistBlur = document.getElementById("whitelist-blur");
     btnWhitelist = document.getElementById("btnWhiteList");
+    btnInfomationFooter = document.getElementById("btnInfomationFooter");
     applyListeners();
   };
   const applyListeners = () => {
@@ -228,6 +230,9 @@ const app = () => {
       }
     });
     btnWhitelist.addEventListener("click", () => {
+      openPopupWhitelist(whitelistBlur, "whitelist-show");
+    });
+    btnInfomationFooter.addEventListener("click", () => {
       openPopupWhitelist(whitelistBlur, "whitelist-show");
     });
   };

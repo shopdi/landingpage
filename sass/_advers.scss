@@ -1,5 +1,11 @@
 @media only screen and (max-width: $mobile) {
   .wrapper-view {
+
+
+    .advers-button-wishlist {
+      width: 100%;
+    }
+
     grid-template-columns: none !important;
 
     .advers-button {
@@ -31,16 +37,10 @@
       }
     }
 
+
     &-button {
       justify-content: space-evenly;
 
-      &-wishlist {
-        width: 155px !important;
-      }
-
-      &-readmore {
-        width: 155px !important;
-      }
     }
   }
 }
@@ -109,7 +109,7 @@
       align-items: center;
       padding: 14px 18px;
       gap: 10px;
-      width: 180px;
+      width: 220px;
       height: 50px;
       background: #fdd116;
       border-radius: 8px;
@@ -167,4 +167,6 @@
   .advers-countdown {
     justify-content: stretch;
   }
+
+
 }

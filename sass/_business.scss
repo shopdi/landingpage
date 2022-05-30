@@ -76,6 +76,35 @@
           color: #f4f6f8;
           margin-bottom: 8px;
         }
+
+        &-list {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+
+          &-item {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #F4F6F8;
+            position: relative;
+            margin-left: 16px;
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              background-color: #fdd116;
+              top: 50%;
+              left: -15px;
+              transform: translate(0px, -50%);
+            }
+          }
+        }
       }
     }
 
@@ -133,6 +162,8 @@
           text-align: right;
           color: #f4f6f8;
         }
+
+
       }
     }
   }
@@ -195,6 +226,10 @@
             text-align: center;
             margin-bottom: 16px;
           }
+
+          &-list {
+            margin-bottom: 8px;
+          }
         }
       }
 
@@ -234,6 +269,10 @@
           }
         }
       }
+    }
+
+    .text-left-mobile {
+      text-align: left;
     }
   }
 }
