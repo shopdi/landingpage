@@ -298,7 +298,7 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 function countdown() {
-  var countDownDate = new Date("June 24, 2022 16:30:00").getTime();
+  var countDownDate = new Date("August 26, 2022 09:00:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
