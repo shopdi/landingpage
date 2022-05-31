@@ -2417,6 +2417,10 @@ canvas {
 }
 
 @media only screen and (max-width: 992px) {
+  .advisor-list-item-text-small {
+    font-size: 16px !important;
+  }
+
   .advisor {
     margin-top: 88px;
   }
@@ -2454,9 +2458,6 @@ canvas {
   }
   .advisor .advisor-list-item-title {
     font-size: 24px !important;
-  }
-  .advisor .advisor-list-item-text-small {
-    font-size: 16px !important;
   }
 }
 
