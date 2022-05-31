@@ -832,7 +832,7 @@ section h2,
   border: 1px solid #fee681;
   border-radius: 15px;
   width: 550px;
-  height: 400px;
+  height: 420px;
 }
 .feature .feature-list-item.slick-slide:not(.slick-center) .feature-list-item-image {
   margin-bottom: 32px;
@@ -848,10 +848,6 @@ section h2,
   letter-spacing: -1px;
   color: #FDD116;
   margin-bottom: 8px;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .feature .feature-list-item.slick-slide:not(.slick-center) .feature-list-item-text {
   font-style: normal;
@@ -859,10 +855,6 @@ section h2,
   font-size: 16px;
   line-height: 140%;
   color: #f4f6f8;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .feature-name {
   font-style: normal;
@@ -902,7 +894,8 @@ section h2,
     height: 100px !important;
   }
   .feature .feature-list-item {
-    min-height: 500px !important;
+    min-height: 600px !important;
+    height: auto !important;
     width: 330px;
   }
   .feature .feature-list-item-title {
@@ -911,11 +904,6 @@ section h2,
   }
   .feature .feature-list-item-text {
     font-size: 16px !important;
-    min-height: min-content !important;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 12 !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 }
 .tokenomics {

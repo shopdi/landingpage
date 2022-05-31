@@ -143,7 +143,7 @@
     border: 1px solid #fee681;
     border-radius: 15px;
     width: 550px;
-    height: 400px;
+    height: 420px;
 
     .feature-list-item-image {
       margin-bottom: 32px;
@@ -160,10 +160,6 @@
       letter-spacing: -1px;
       color: #FDD116;
       margin-bottom: 8px;
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
     }
 
     .feature-list-item-text {
@@ -172,10 +168,6 @@
       font-size: 16px;
       line-height: 140%;
       color: #f4f6f8;
-      display: -webkit-box;
-      -webkit-line-clamp: 6;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
     }
   }
 
@@ -261,7 +253,8 @@
     }
 
     .feature-list-item {
-      min-height: 500px !important;
+      min-height: 600px !important;
+      height: auto !important;
       width: 330px;
     }
 
@@ -272,11 +265,6 @@
 
     .feature-list-item-text {
       font-size: 16px !important;
-      min-height: min-content !important;
-      display: -webkit-box !important;
-      -webkit-line-clamp: 12 !important;
-      -webkit-box-orient: vertical !important;
-      overflow: hidden !important;
     }
   }
 }
