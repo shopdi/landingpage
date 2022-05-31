@@ -2424,6 +2424,7 @@ canvas {
 @media only screen and (max-width: 992px) {
   .advisor-list-item-text-small {
     font-size: 16px !important;
+    -webkit-text-size-adjust: none;
   }
 
   .advisor {
