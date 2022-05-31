@@ -2469,7 +2469,6 @@ canvas {
   }
   .advisor .advisor-list-item-text {
     font-size: 16px !important;
-    min-height: min-content !important;
   }
 }
 
