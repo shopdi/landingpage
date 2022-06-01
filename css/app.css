@@ -2282,6 +2282,46 @@ canvas {
   display: block;
 }
 
+@media only screen and (max-width: 992px) {
+  .whitelist .form-whitelist {
+    border-radius: 10px;
+    padding: 60px 20px;
+    max-width: 300px;
+  }
+  .whitelist .form-whitelist-heading {
+    font-size: 25px;
+  }
+  .whitelist .form-whitelist-label {
+    font-size: 12px;
+  }
+  .whitelist .form-whitelist-input {
+    padding: 15px;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .whitelist .form-whitelist-input::-webkit-input-placeholder {
+    color: #b4bac0;
+    font-weight: 500;
+  }
+  .whitelist .form-whitelist-input::-moz-input-placeholder {
+    color: #b4bac0;
+    font-weight: 500;
+  }
+  .whitelist .form-whitelist-submit {
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .whitelist .form-whitelist-already {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+  }
+  .whitelist .form-whitelist-login-link {
+    color: #2979ff;
+    text-decoration: none;
+  }
+}
 @media only screen and (min-width: 992px) {
   .advisor {
     display: flex;

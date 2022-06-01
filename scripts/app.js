@@ -6,82 +6,87 @@ function preventScroll(e) {
 
 var canvas = document.createElement("canvas");
 
-window.addEventListener('resize', () => {
+window.addEventListener("resize", () => {
   setTimeout(() => {
     canvas.width = window.innerWidth * 0.75;
     canvas.height = window.innerHeight * 0.75;
-  }, 500)
-
+  }, 500);
 });
 
 function randomIndex(number) {
-  return Math.floor(Math.random() * number)
+  return Math.floor(Math.random() * number);
 }
 
-const indexTeam = 0
+const indexTeam = 0;
 const loopTeam = true;
 
-$(".team-gallery").slick({
-  dots: false,
-  slidesToShow: 1,
-  draggable: true,
-  infinite: loopTeam,
-  speed: 200,
-  centerMode: true,
-  variableWidth: true,
-  arrows: false,
-  initialSlide: indexTeam,
-  focusOnSelect: true,
-  asNavFor: ".team-description-list",
-  adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1,
+$(".team-gallery")
+  .slick({
+    dots: false,
+    slidesToShow: 1,
+    draggable: true,
+    infinite: loopTeam,
+    speed: 200,
+    centerMode: true,
+    variableWidth: true,
+    arrows: false,
+    initialSlide: indexTeam,
+    focusOnSelect: true,
+    asNavFor: ".team-description-list",
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+        },
       },
-    },
-  ],
-}).on('beforeChange', (event, slick, currentSlide, nextSlide) => {
-  if (currentSlide !== nextSlide) {
-    document.querySelectorAll('.slick-center + .slick-cloned').forEach((next) => {
-      setTimeout(() => next.classList.add('slick-current', 'slick-center'));
-    });
-  }
-});
+    ],
+  })
+  .on("beforeChange", (event, slick, currentSlide, nextSlide) => {
+    if (currentSlide !== nextSlide) {
+      document
+        .querySelectorAll(".slick-center + .slick-cloned")
+        .forEach((next) => {
+          setTimeout(() => next.classList.add("slick-current", "slick-center"));
+        });
+    }
+  });
 
-
-$(".feature-list").slick({
-  dots: true,
-  infinite: true,
-  centerMode: true,
-  adaptiveHeight: true,
-  variableWidth: true,
-  focusOnSelect: true,
-  initialSlide: 0,
-  arrows: true,
-  prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-arrow-left"></span></button>`,
-  nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-arrow-right"></span></button>`,
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: false,
-        centerMode: false,
+$(".feature-list")
+  .slick({
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    adaptiveHeight: true,
+    variableWidth: true,
+    focusOnSelect: true,
+    initialSlide: 0,
+    arrows: true,
+    prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-arrow-left"></span></button>`,
+    nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-arrow-right"></span></button>`,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: false,
+          centerMode: false,
+        },
       },
-    },
-  ],
-}).on('beforeChange', (event, slick, currentSlide, nextSlide) => {
-  if (currentSlide !== nextSlide) {
-    document.querySelectorAll('.slick-center + .slick-cloned').forEach((next) => {
-      // timeout required or Slick will overwrite the classes
-      setTimeout(() => next.classList.add('slick-current', 'slick-center'));
-    });
-  }
-});
-
+    ],
+  })
+  .on("beforeChange", (event, slick, currentSlide, nextSlide) => {
+    if (currentSlide !== nextSlide) {
+      document
+        .querySelectorAll(".slick-center + .slick-cloned")
+        .forEach((next) => {
+          // timeout required or Slick will overwrite the classes
+          setTimeout(() => next.classList.add("slick-current", "slick-center"));
+        });
+    }
+  });
 
 $(".advisor-list").slick({
   dots: false,
@@ -142,46 +147,70 @@ $(document).ready(function () {
 function onSubmit(e) {
   e.preventDefault();
 
-  const name = document.querySelector("#fullname").value;
+  const fullname = document.querySelector("#fullname").value;
   const email = document.querySelector("#email").value;
+  const mobile = document.querySelector("#mobile").value;
 
-  if (!name || !email) {
+  if (!fullname || !email || !mobile) {
     notification("Please enter data full form", "Warning");
     return;
   }
 
-  grecaptcha
-    .execute("6Ldb9_gfAAAAAObJHYgKp5ifrmL7U4iGIIUCTfGu", {
-      action: "homepage",
-    })
-    .then(function (token) {
-      const captcha = token;
-
-      fetch("https://nodejsv3captcha.herokuapp.com/subscribe", {
-        method: "POST",
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          captcha: captcha,
-        }),
-      })
-        .then((res) => res.json())
-        .then((result) => {
-          const { success } = result;
-          if (success) {
-            notification("Your whitelist is added");
-            document.querySelector("#fullname").value = "";
-            document.querySelector("#email").value = "";
-          }
-        });
+  fetch("https://api-information.herokuapp.com/saveInformation", {
+    method: "POST",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      fullname: fullname,
+      email: email,
+      mobile: mobile,
+    }),
+  })
+    .then((res) => res.json())
+    .then((result) => {
+      const { success } = result;
+      if (success) {
+        document.querySelector("#fullname").value = "";
+        document.querySelector("#email").value = "";
+        document.querySelector("#mobile").value = "";
+        notification("Your information is added");
+      }
     });
+
+  // grecaptcha
+  //   .execute("6Ldb9_gfAAAAAObJHYgKp5ifrmL7U4iGIIUCTfGu", {
+  //     action: "homepage",
+  //   })
+  //   .then(function (token) {
+  //     const captcha = token;
+
+  //     fetch("https://nodejsv3captcha.herokuapp.com/subscribe", {
+  //       method: "POST",
+  //       headers: {
+  //         Accept: "application/json, text/plain, */*",
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         name: name,
+  //         email: email,
+  //         captcha: captcha,
+  //       }),
+  //     })
+  //       .then((res) => res.json())
+  //       .then((result) => {
+  //         const { success } = result;
+  //         if (success) {
+  //           notification("Your whitelist is added");
+  //           document.querySelector("#fullname").value = "";
+  //           document.querySelector("#email").value = "";
+  //         }
+  //       });
+  //   });
 }
 
-function notification(text, heading = "Success") {
+function notification(text, heading = "success") {
   $.toast({
     heading: heading,
     text: text,
@@ -195,7 +224,6 @@ function formEvent(e) {
   document
     .getElementById("formWhiteListSubmit")
     .addEventListener("submit", onSubmit);
-
 }
 
 const app = () => {
@@ -255,12 +283,15 @@ const app = () => {
 };
 const sections = document.querySelectorAll("section[id]");
 
-$(document).on('click', 'a[href^="#"]', function (event) {
+$(document).on("click", 'a[href^="#"]', function (event) {
   event.preventDefault();
 
-  $('html, body').animate({
-    scrollTop: $($.attr(this, 'href')).offset().top - 160
-  }, 200);
+  $("html, body").animate(
+    {
+      scrollTop: $($.attr(this, "href")).offset().top - 160,
+    },
+    200
+  );
 });
 
 function scrollActive() {
@@ -330,7 +361,6 @@ function countdown() {
     // If the count down is finished, write some text
   }, 1000);
 }
-
 
 var width = (canvas.width = window.innerWidth * 0.75);
 var height = (canvas.height = window.innerHeight * 0.75);
