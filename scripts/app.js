@@ -146,13 +146,19 @@ $(document).ready(function () {
 
 function onSubmit(e) {
   e.preventDefault();
+  $("#btnSubmitWhiteList").prop("disabled", true);
+  $("#btnSubmitWhiteList").html(
+    '<i id="loading-submit" class="fa fa-circle-o-notch fa-spin"></i> Loading'
+  );
 
   const fullname = document.querySelector("#fullname").value;
   const email = document.querySelector("#email").value;
   const mobile = document.querySelector("#mobile").value;
 
   if (!fullname || !email || !mobile) {
-    notification("Please enter data full form", "Warning");
+    notification("Please enter data.", "warning");
+    $("#btnSubmitWhiteList").html("Submit");
+    $("#btnSubmitWhiteList").prop("disabled", false);
     return;
   }
 
@@ -177,6 +183,10 @@ function onSubmit(e) {
         document.querySelector("#mobile").value = "";
         notification("Your information is added");
       }
+    })
+    .finally(() => {
+      $("#btnSubmitWhiteList").html("Submit");
+      $("#btnSubmitWhiteList").prop("disabled", false);
     });
 
   // grecaptcha
